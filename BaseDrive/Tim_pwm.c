@@ -482,7 +482,7 @@ void TIM_IT_Handler(uint8_t tim_id)
 		{
 			//TIM_Cmd(timer_array[tim_id].tim_name,DISABLE);
 			//TIM_ITConfig(timer_array[tim_id].tim_name,timer_array[tim_id].tim_it,DISABLE);
-			debug("TIM%d run %d times,close\r\n",(tim_id+1),timer_array[tim_id].step_count);
+			debug("Motor %d stop,run %d times\r\n",(Motor_timid2motorid(tim_id)+1),timer_array[tim_id].step_count);
 			//dma_debug("TIM%d run %d times,close\r\n",(tim_id+1),timer_array[tim_id].step_count);
 			//timer_array[tim_id].step_count = 0;
 			Motor_Stop(Motor_timid2motorid(tim_id));

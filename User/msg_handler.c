@@ -96,7 +96,7 @@ void cmd_process(void)
 									Motor_set_setpNum((uint8_t)(id - 1), i_postion);
 									Motor_setFrequency((uint8_t)(id - 1), i_initsp,i_sp,i_spup);
 									Motor_Run((uint8_t)(id - 1));
-									debug("Motor%d start!\r\n", id);
+									debug("Motor %d start!\r\n", id);
 									//dma_debug("TIM%d start!\r\n", id);
 									return;
 								}

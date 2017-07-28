@@ -404,6 +404,61 @@ namespace Motor
             //textBox_cmd.Text += "\r\n>";
         }
 
+        private void SetMotorState(int id, char state)
+        {
+            Label motor;
+            switch(id)
+            {
+                case 1:
+                    motor = label_m1;
+                    break;
+                case 2:
+                    motor = label_m2;
+                    break;
+                case 3:
+                    motor = label_m3;
+                    break;
+                case 4:
+                    motor = label_m4;
+                    break;
+                case 5:
+                    motor = label_m5;
+                    break;
+                case 6:
+                    motor = label_m6;
+                    break;
+                case 7:
+                    motor = label_m7;
+                    break;
+                case 8:
+                    motor = label_m8;
+                    break;
+                case 9:
+                    motor = label_m9;
+                    break;
+                case 10:
+                    motor = label_m10;
+                    break;
+                case 11:
+                    motor = label_m11;
+                    break;
+                case 12:
+                    motor = label_m12;
+                    break;
+                default:
+                    return;
+            }
+            if(state == 1)
+            {
+                motor.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                motor.BackColor = SystemColors.Control;
+            }
+            return;
+        }
+
         private void button_scan_Click(object sender, EventArgs e)
         {
             ScanSerialPort();
@@ -486,7 +541,7 @@ namespace Motor
             {
                 if(msglist[i - 1] == '\r' && msglist[i] == '\n')
                 {
-                    return i;
+                    return i + 1;
                 }
             }
             return iMsglen;
@@ -494,7 +549,22 @@ namespace Motor
 
         private void Msg_Handler(List<char> tlist)
         {
-            textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), tlist.ToString());
+            string currentline = new string(tlist.ToArray());
+            //currentline = tlist.
+            textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), currentline);
+
+            //if(currentline.IndexOf("Motor start "))
+            int i = currentline.IndexOf("Motor ");
+            if (i < 0 || i + 6 >= tlist.Count)
+                return;
+            i += 6;
+            char motorid = tlist[i];
+
+            i = currentline.IndexOf("start!", i);
+            if( i >= 0)
+            {
+                
+            }
         }
 
         private void SPort_DataReceive(object sender, SerialDataReceivedEventArgs e)
