@@ -25,6 +25,7 @@ namespace Motor
         public const int MOTOR_NUMBER = 12;
         public const int RELAY_NUMBER = 8;
         MotorControl[] motorlist = new MotorControl[MOTOR_NUMBER];
+        List<char> msglist = new List<char>();
 
         private void textBox_KeyPress_check(object sender, KeyPressEventArgs e)
         {
@@ -477,21 +478,50 @@ namespace Motor
             return true;
         }
 
+        private int Sport_CheckMsg()
+        {
+            int iMsglen = 0;
+            int i = 0;
+            for (i = 1; i < msglist.Count; i++)
+            {
+                if(msglist[i - 1] == '\r' && msglist[i] == '\n')
+                {
+                    return i;
+                }
+            }
+            return iMsglen;
+        }
+
+        private void Msg_Handler(List<char> tlist)
+        {
+            textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), tlist.ToString());
+        }
+
         private void SPort_DataReceive(object sender, SerialDataReceivedEventArgs e)
         {
             try
             {
                 string currentline = "";
+                int i = 0;
+                List<char> buflist = new List<char>();
                 //循环接收串口中的数据
                 while (_MyPort.BytesToRead > 0)
                 {
                     char ch = (char)_MyPort.ReadByte();
                     currentline += ch.ToString();
+                    msglist.Add(ch);
                 }
                 //在这里对接收到的数据进行显示
-                //如果不在窗体加载的事件里写上：Form.CheckForIllegalCrossThreadCalls = false; 就会报错）
-                //Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.SystemIdle, new DelegateSetCmdText(SetCmdText), currentline);
-                textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), /*currentline.Replace("\n", "\r\n")*/currentline);
+                i = Sport_CheckMsg();
+                while(i != 0)
+                {
+                    buflist.Clear();
+                    buflist = msglist.GetRange(0, i);
+                    msglist.RemoveRange(0, i);
+                    Msg_Handler(buflist);
+                    i = Sport_CheckMsg();
+                }
+                //textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), currentline/*.Replace("\n", "\r\n")*/);
             }
             catch (Exception ex)
             {
