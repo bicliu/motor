@@ -43,6 +43,7 @@
   * @{
   */ 
 
+extern void MYUSART_IT_Handler(uint8_t i);
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -157,8 +158,22 @@ void SysTick_Handler(void)
 /*  available peripheral interrupt handler's name please refer to the startup */
 /*  file (startup_stm32f4xx.s).                                               */
 /******************************************************************************/
+void USART1_IRQHandler(void)
+{
+	MYUSART_IT_Handler(USART_1);
+}/**/
 
-void USARTx_IRQHANDLER(void)
+void USART2_IRQHandler(void)
+{
+	MYUSART_IT_Handler(USART_2);
+}
+
+void USART6_IRQHandler(void)
+{
+	MYUSART_IT_Handler(USART_6);
+}
+
+/*void USARTx_IRQHANDLER(void)
 {
 #if 1
 	u8 Res;
@@ -219,7 +234,7 @@ void USARTx_IRQHANDLER(void)
      DMA_Cmd(DMA2_Stream5, ENABLE);
 	}
 #endif
-}
+}*/
 
 /**
   * @brief  TIM1 CC IT Handler.

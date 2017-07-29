@@ -33,7 +33,9 @@ int main(void)
 	uint32_t nCount;
 	//Gpio_Info gpio_pg0;
 	
-	USART_RXNE_Init();
+	MYUSART_ParaSet();
+	MYUSART_Init();
+	//USART_RXNE_Init();
 	//uart_init();
 	LEDGpio_Init();
 	MyTimer_Start();
@@ -60,7 +62,8 @@ int main(void)
   while (1)
   {
 		//debug("%x", 0xaa);
-		msg_receive();
+		//msg_receive();
+		MYMSG_receive();
   }
 }
 

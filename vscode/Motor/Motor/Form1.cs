@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
 
 namespace Motor
 {
@@ -459,6 +460,253 @@ namespace Motor
             return;
         }
 
+        private void SetMotorLMTBIT(int id, char bit, int bitID)
+        {
+            Label lmtbit;
+            switch (id)
+            {
+                case 1:
+                    switch(bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m1_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m1_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m1_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m1_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 2:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m2_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m2_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m2_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m2_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 3:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m3_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m3_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m3_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m3_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 4:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m4_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m4_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m4_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m4_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 5:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m5_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m5_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m5_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m5_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 6:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m6_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m6_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m6_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m6_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 7:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m7_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m7_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m7_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m7_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 8:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m8_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m8_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m8_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m8_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 9:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m9_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m9_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m9_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m9_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 10:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m10_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m10_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m10_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m10_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 11:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m11_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m11_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m11_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m11_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                case 12:
+                    switch (bitID)
+                    {
+                        case 1:
+                            lmtbit = label_m12_positivebit;
+                            break;
+                        case 2:
+                            lmtbit = label_m12_nagetivebit;
+                            break;
+                        case 3:
+                            lmtbit = label_m12_stop0;
+                            break;
+                        case 4:
+                            lmtbit = label_m12_stop1;
+                            break;
+                        default:
+                            return;
+                    }
+                    break;
+                default:
+                    return;
+            }
+            if (bit == 1)
+            {
+                lmtbit.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                lmtbit.BackColor = SystemColors.ScrollBar;
+            }
+            return;
+        }
+
         private void button_scan_Click(object sender, EventArgs e)
         {
             ScanSerialPort();
@@ -549,21 +797,66 @@ namespace Motor
 
         private void Msg_Handler(List<char> tlist)
         {
+            int motorid;
+            int i = 0;
+            int bit = 0;
             string currentline = new string(tlist.ToArray());
             //currentline = tlist.
             textBox_cmd.Invoke(new DelegateSetCmdText(SetCmdText), currentline);
 
             //if(currentline.IndexOf("Motor start "))
-            int i = currentline.IndexOf("Motor ");
-            if (i < 0 || i + 6 >= tlist.Count)
-                return;
-            i += 6;
-            char motorid = tlist[i];
-
-            i = currentline.IndexOf("start!", i);
-            if( i >= 0)
+            int iposition = currentline.IndexOf("Motor ");
+            i = iposition;
+            if ( i >= 0 )
             {
-                
+                if (i + 6 >= tlist.Count)
+                    return;
+                i += 6;
+                motorid = Convert.ToInt32(tlist[i]) - 0x30;
+                iposition = currentline.IndexOf("start!", i);
+                if (iposition >= 0)
+                {
+                    SetMotorState(motorid, (char)1);
+                    return;
+                }
+                iposition = currentline.IndexOf("stop", i);
+                if (iposition >= 0)
+                {
+                    SetMotorState(motorid, (char)0);
+                    return;
+                }
+                iposition = currentline.IndexOf("lmtp = ", i);
+                if (iposition >= 0)
+                {
+                    if (i + 7 >= tlist.Count)
+                        return;
+                    bit = Convert.ToInt32(tlist[i + 7]) - 0x30;
+                    SetMotorLMTBIT(motorid, (char)bit, 1);
+                }
+                iposition = currentline.IndexOf("lmtn = ", i);
+                if (iposition >= 0)
+                {
+                    if (i + 7 >= tlist.Count)
+                        return;
+                    bit = Convert.ToInt32(tlist[i + 7]) - 0x30;
+                    SetMotorLMTBIT(motorid, (char)bit, 2);
+                }
+                iposition = currentline.IndexOf("stop0 = ", i);
+                if (iposition >= 0)
+                {
+                    if (i + 8 >= tlist.Count)
+                        return;
+                    bit = Convert.ToInt32(tlist[i + 8]) - 0x30;
+                    SetMotorLMTBIT(motorid, (char)bit, 3);
+                }
+                iposition = currentline.IndexOf("stop1 = ", i);
+                if (iposition >= 0)
+                {
+                    if (i + 8 >= tlist.Count)
+                        return;
+                    bit = Convert.ToInt32(tlist[i + 8]) - 0x30;
+                    SetMotorLMTBIT(motorid, (char)bit, 4);
+                }
             }
         }
 
@@ -608,6 +901,7 @@ namespace Motor
                 byte[] WriteBuffer = Encoding.ASCII.GetBytes(str_cmd);
                 //将数据缓冲区的数据写入到串口端口
                 _MyPort.Write(WriteBuffer, 0, WriteBuffer.Length);
+                Thread.Sleep(2);
             }
             catch (Exception ex)
             {

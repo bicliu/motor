@@ -2,7 +2,6 @@
 #include "stm32f4xx.h"
 #include "string.h"
 #include <stdlib.h>
-#include "Usart.h"
 #include "Gpio.h"
 #include "relay.h"
 #include "motor.h"
@@ -13,6 +12,7 @@ uint8_t USART_RX_BUF[BUF_SIZE];
 uint8_t usart_rx_len = 0;
 char cmd_buf[BUF_SIZE]; //copy the cmd
 uint8_t USART_RX_STA=0;
+uint8_t MYUSART_RX_BUF[USART_NUM][BUF_SIZE];
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
@@ -177,9 +177,9 @@ void msg_receive(void)
 {
 	u8 t;
 	u8 len;	
-	if(USART_RX_STA&0x80)
+	if(USART_RX_STA/*usart_array[USART_1].RX_STATE*/&0x80)
 	{					   
-		len=USART_RX_STA&0x3f;//get receive data length
+		len=USART_RX_STA/*usart_array[USART_1].RX_STATE*/&0x3f;//get receive data length
 		memset(cmd_buf, 0, BUF_SIZE);
 		
 		for(t=0;t<len;t++) //for USART_RX_BUF may not be string
@@ -187,13 +187,13 @@ void msg_receive(void)
 			cmd_buf[t] = (uint8_t)USART_RX_BUF[t];
 		}
 		//DEBUG("\ninput : %s",cmd_buf);
-		USART_RX_STA=0;
+		USART_RX_STA/*usart_array[USART_1].RX_STATE*/=0;
 		cmd_process();
-		LED1_OFF;
+		//LED1_OFF;
 	}
 }
 
-void msg_dmarx(uint16_t len)
+/*void msg_dmarx(uint16_t len)
 {
 	u8 t;
 	memset(cmd_buf, 0, BUF_SIZE);
@@ -202,4 +202,27 @@ void msg_dmarx(uint16_t len)
 		cmd_buf[t] = (uint8_t)USART_RX_BUF[t];
 	}
 	cmd_process();
+}*/
+
+void MYMSG_receive(void)
+{
+	u8 t;
+	u8 len;	
+	uint8_t i = 0;
+	for(i = 0; i < USART_NUM; i++)
+	{
+		if(usart_array[i].RX_STATE&0x80)
+		{					   
+			len=usart_array[i].RX_STATE&0x3f;//get receive data length
+			memset(cmd_buf, 0, BUF_SIZE);
+		
+			for(t=0;t<len;t++) //for USART_RX_BUF may not be string
+			{
+				cmd_buf[t] = (uint8_t)MYUSART_RX_BUF[i][t];
+			}
+			//DEBUG("\ninput : %s",cmd_buf);
+			usart_array[i].RX_STATE=0;
+			cmd_process();
+		}
+	}
 }

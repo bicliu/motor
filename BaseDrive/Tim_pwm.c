@@ -26,8 +26,6 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f4xx.h"
-
 #include "Usart.h"
 #include "Tim_pwm.h"
 #include "public.h"
