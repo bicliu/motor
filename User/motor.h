@@ -21,6 +21,7 @@
 ********************************************************************************************/
 #ifndef _MOTOR_H_
 #define _MOTOR_H_
+#include "stm32f4xx.h"
 
 #define MOTOR1      0
 #define MOTOR2      1
@@ -35,6 +36,7 @@
 #define MOTOR11     10
 #define MOTOR12     11
 #define MOTOR_NUM   12
+//#define MOTOR_NUM   7
 
 #define IOENABLE_ENABLE    Bit_RESET
 #define IOENABLE_DISABLE   Bit_SET

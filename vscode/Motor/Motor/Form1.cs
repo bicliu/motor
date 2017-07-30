@@ -64,6 +64,15 @@ namespace Motor
             motorlist[0].ioCB_nagativeBit = checkBox_m1_IOIn_nagativebit;
             motorlist[0].ioCB_stop0 = checkBox_m1_IOIn_STOP0;
             motorlist[0].ioCB_stop1 = checkBox_m1_IOIn_STOP1;
+            //show
+            motorlist[0].showL_state = label_m1;
+            motorlist[0].showL_lmtP = label_m1_lmtp;
+            motorlist[0].showL_lmtN = label_m1_lmtn;
+            motorlist[0].showL_stop0 = label_m1_stop0;
+            motorlist[0].showL_stop1 = label_m1_stop1;
+            motorlist[0].showL_timePosition = label_m1_timeposition;
+            motorlist[0].showL_finalPosition = label_m1_finalposition;
+            motorlist[0].showL_speed = label_m1_speed;
 
             /*motor 2 control list*/
             //base
@@ -90,6 +99,15 @@ namespace Motor
             motorlist[1].ioCB_nagativeBit = checkBox_m2_IOIn_nagativebit;
             motorlist[1].ioCB_stop0 = checkBox_m2_IOIn_STOP0;
             motorlist[1].ioCB_stop1 = checkBox_m2_IOIn_STOP1;
+            //show
+            motorlist[1].showL_state = label_m2;
+            motorlist[1].showL_lmtP = label_m2_lmtp;
+            motorlist[1].showL_lmtN = label_m2_lmtn;
+            motorlist[1].showL_stop0 = label_m2_stop0;
+            motorlist[1].showL_stop1 = label_m2_stop1;
+            motorlist[1].showL_timePosition = label_m2_timeposition;
+            motorlist[1].showL_finalPosition = label_m2_finalposition;
+            motorlist[1].showL_speed = label_m2_speed;
 
             /*motor 3 control list*/
             //base
@@ -116,6 +134,15 @@ namespace Motor
             motorlist[2].ioCB_nagativeBit = checkBox_m3_IOIn_nagativebit;
             motorlist[2].ioCB_stop0 = checkBox_m3_IOIn_STOP0;
             motorlist[2].ioCB_stop1 = checkBox_m3_IOIn_STOP1;
+            //show
+            motorlist[2].showL_state = label_m3;
+            motorlist[2].showL_lmtP = label_m3_lmtp;
+            motorlist[2].showL_lmtN = label_m3_lmtn;
+            motorlist[2].showL_stop0 = label_m3_stop0;
+            motorlist[2].showL_stop1 = label_m3_stop1;
+            motorlist[2].showL_timePosition = label_m3_timeposition;
+            motorlist[2].showL_finalPosition = label_m3_finalposition;
+            motorlist[2].showL_speed = label_m3_speed;
 
             /*motor 4 control list*/
             //base
@@ -142,6 +169,15 @@ namespace Motor
             motorlist[3].ioCB_nagativeBit = checkBox_m4_IOIn_nagativebit;
             motorlist[3].ioCB_stop0 = checkBox_m4_IOIn_STOP0;
             motorlist[3].ioCB_stop1 = checkBox_m4_IOIn_STOP1;
+            //show
+            motorlist[3].showL_state = label_m4;
+            motorlist[3].showL_lmtP = label_m4_lmtp;
+            motorlist[3].showL_lmtN = label_m4_lmtn;
+            motorlist[3].showL_stop0 = label_m4_stop0;
+            motorlist[3].showL_stop1 = label_m4_stop1;
+            motorlist[3].showL_timePosition = label_m4_timeposition;
+            motorlist[3].showL_finalPosition = label_m4_finalposition;
+            motorlist[3].showL_speed = label_m4_speed;
 
             /*motor 5 control list*/
             //base
@@ -168,6 +204,15 @@ namespace Motor
             motorlist[4].ioCB_nagativeBit = checkBox_m5_IOIn_nagativebit;
             motorlist[4].ioCB_stop0 = checkBox_m5_IOIn_STOP0;
             motorlist[4].ioCB_stop1 = checkBox_m5_IOIn_STOP1;
+            //show
+            motorlist[4].showL_state = label_m5;
+            motorlist[4].showL_lmtP = label_m5_lmtp;
+            motorlist[4].showL_lmtN = label_m5_lmtn;
+            motorlist[4].showL_stop0 = label_m5_stop0;
+            motorlist[4].showL_stop1 = label_m5_stop1;
+            motorlist[4].showL_timePosition = label_m5_timeposition;
+            motorlist[4].showL_finalPosition = label_m5_finalposition;
+            motorlist[4].showL_speed = label_m5_speed;
 
             /*motor 6 control list*/
             //base
@@ -194,6 +239,15 @@ namespace Motor
             motorlist[5].ioCB_nagativeBit = checkBox_m6_IOIn_nagativebit;
             motorlist[5].ioCB_stop0 = checkBox_m6_IOIn_STOP0;
             motorlist[5].ioCB_stop1 = checkBox_m6_IOIn_STOP1;
+            //show
+            motorlist[5].showL_state = label_m6;
+            motorlist[5].showL_lmtP = label_m6_lmtp;
+            motorlist[5].showL_lmtN = label_m6_lmtn;
+            motorlist[5].showL_stop0 = label_m6_stop0;
+            motorlist[5].showL_stop1 = label_m6_stop1;
+            motorlist[5].showL_timePosition = label_m6_timeposition;
+            motorlist[5].showL_finalPosition = label_m6_finalposition;
+            motorlist[5].showL_speed = label_m6_speed;
 
             /*motor 7 control list*/
             //base
@@ -220,6 +274,15 @@ namespace Motor
             motorlist[6].ioCB_nagativeBit = checkBox_m7_IOIn_nagativebit;
             motorlist[6].ioCB_stop0 = checkBox_m7_IOIn_STOP0;
             motorlist[6].ioCB_stop1 = checkBox_m7_IOIn_STOP1;
+            //show
+            motorlist[6].showL_state = label_m7;
+            motorlist[6].showL_lmtP = label_m7_lmtp;
+            motorlist[6].showL_lmtN = label_m7_lmtn;
+            motorlist[6].showL_stop0 = label_m7_stop0;
+            motorlist[6].showL_stop1 = label_m7_stop1;
+            motorlist[6].showL_timePosition = label_m7_timeposition;
+            motorlist[6].showL_finalPosition = label_m7_finalposition;
+            motorlist[6].showL_speed = label_m7_speed;
 
             /*motor 8 control list*/
             //base
@@ -246,6 +309,15 @@ namespace Motor
             motorlist[7].ioCB_nagativeBit = checkBox_m8_IOIn_nagativebit;
             motorlist[7].ioCB_stop0 = checkBox_m8_IOIn_STOP0;
             motorlist[7].ioCB_stop1 = checkBox_m8_IOIn_STOP1;
+            //show
+            motorlist[7].showL_state = label_m8;
+            motorlist[7].showL_lmtP = label_m8_lmtp;
+            motorlist[7].showL_lmtN = label_m8_lmtn;
+            motorlist[7].showL_stop0 = label_m8_stop0;
+            motorlist[7].showL_stop1 = label_m8_stop1;
+            motorlist[7].showL_timePosition = label_m8_timeposition;
+            motorlist[7].showL_finalPosition = label_m8_finalposition;
+            motorlist[7].showL_speed = label_m8_speed;
 
             /*motor 9 control list*/
             //base
@@ -272,6 +344,15 @@ namespace Motor
             motorlist[8].ioCB_nagativeBit = checkBox_m9_IOIn_nagativebit;
             motorlist[8].ioCB_stop0 = checkBox_m9_IOIn_STOP0;
             motorlist[8].ioCB_stop1 = checkBox_m9_IOIn_STOP1;
+            //show
+            motorlist[8].showL_state = label_m9;
+            motorlist[8].showL_lmtP = label_m9_lmtp;
+            motorlist[8].showL_lmtN = label_m9_lmtn;
+            motorlist[8].showL_stop0 = label_m9_stop0;
+            motorlist[8].showL_stop1 = label_m9_stop1;
+            motorlist[8].showL_timePosition = label_m9_timeposition;
+            motorlist[8].showL_finalPosition = label_m9_finalposition;
+            motorlist[8].showL_speed = label_m9_speed;
 
             /*motor 10 control list*/
             //base
@@ -298,6 +379,15 @@ namespace Motor
             motorlist[9].ioCB_nagativeBit = checkBox_m10_IOIn_nagativebit;
             motorlist[9].ioCB_stop0 = checkBox_m10_IOIn_STOP0;
             motorlist[9].ioCB_stop1 = checkBox_m10_IOIn_STOP1;
+            //show
+            motorlist[9].showL_state = label_m10;
+            motorlist[9].showL_lmtP = label_m10_lmtp;
+            motorlist[9].showL_lmtN = label_m10_lmtn;
+            motorlist[9].showL_stop0 = label_m10_stop0;
+            motorlist[9].showL_stop1 = label_m10_stop1;
+            motorlist[9].showL_timePosition = label_m10_timeposition;
+            motorlist[9].showL_finalPosition = label_m10_finalposition;
+            motorlist[9].showL_speed = label_m10_speed;
 
             /*motor 11 control list*/
             //base
@@ -324,6 +414,15 @@ namespace Motor
             motorlist[10].ioCB_nagativeBit = checkBox_m11_IOIn_nagativebit;
             motorlist[10].ioCB_stop0 = checkBox_m11_IOIn_STOP0;
             motorlist[10].ioCB_stop1 = checkBox_m11_IOIn_STOP1;
+            //show
+            motorlist[10].showL_state = label_m11;
+            motorlist[10].showL_lmtP = label_m11_lmtp;
+            motorlist[10].showL_lmtN = label_m11_lmtn;
+            motorlist[10].showL_stop0 = label_m11_stop0;
+            motorlist[10].showL_stop1 = label_m11_stop1;
+            motorlist[10].showL_timePosition = label_m11_timeposition;
+            motorlist[10].showL_finalPosition = label_m11_finalposition;
+            motorlist[10].showL_speed = label_m11_speed;
 
             /*motor 12 control list*/
             //base
@@ -350,6 +449,15 @@ namespace Motor
             motorlist[11].ioCB_nagativeBit = checkBox_m12_IOIn_nagativebit;
             motorlist[11].ioCB_stop0 = checkBox_m12_IOIn_STOP0;
             motorlist[11].ioCB_stop1 = checkBox_m12_IOIn_STOP1;
+            //show
+            motorlist[11].showL_state = label_m12;
+            motorlist[11].showL_lmtP = label_m12_lmtp;
+            motorlist[11].showL_lmtN = label_m12_lmtn;
+            motorlist[11].showL_stop0 = label_m12_stop0;
+            motorlist[11].showL_stop1 = label_m12_stop1;
+            motorlist[11].showL_timePosition = label_m12_timeposition;
+            motorlist[11].showL_finalPosition = label_m12_finalposition;
+            motorlist[11].showL_speed = label_m12_speed;
         }
 
         private void combobox_default_selected()
@@ -407,55 +515,13 @@ namespace Motor
 
         private void SetMotorState(int id, char state)
         {
-            Label motor;
-            switch(id)
-            {
-                case 1:
-                    motor = label_m1;
-                    break;
-                case 2:
-                    motor = label_m2;
-                    break;
-                case 3:
-                    motor = label_m3;
-                    break;
-                case 4:
-                    motor = label_m4;
-                    break;
-                case 5:
-                    motor = label_m5;
-                    break;
-                case 6:
-                    motor = label_m6;
-                    break;
-                case 7:
-                    motor = label_m7;
-                    break;
-                case 8:
-                    motor = label_m8;
-                    break;
-                case 9:
-                    motor = label_m9;
-                    break;
-                case 10:
-                    motor = label_m10;
-                    break;
-                case 11:
-                    motor = label_m11;
-                    break;
-                case 12:
-                    motor = label_m12;
-                    break;
-                default:
-                    return;
-            }
             if(state == 1)
             {
-                motor.BackColor = Color.LightGreen;
+                motorlist[id].showL_state.BackColor = Color.LightGreen;
             }
             else
             {
-                motor.BackColor = SystemColors.Control;
+                motorlist[id].showL_state.BackColor = SystemColors.Control;
             }
             return;
         }
@@ -463,235 +529,19 @@ namespace Motor
         private void SetMotorLMTBIT(int id, char bit, int bitID)
         {
             Label lmtbit;
-            switch (id)
+            switch (bitID)
             {
                 case 1:
-                    switch(bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m1_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m1_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m1_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m1_stop1;
-                            break;
-                        default:
-                            return;
-                    }
+                    lmtbit = motorlist[id].showL_lmtP;
                     break;
                 case 2:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m2_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m2_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m2_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m2_stop1;
-                            break;
-                        default:
-                            return;
-                    }
+                    lmtbit = motorlist[id].showL_lmtN;
                     break;
                 case 3:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m3_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m3_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m3_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m3_stop1;
-                            break;
-                        default:
-                            return;
-                    }
+                    lmtbit = motorlist[id].showL_stop0;
                     break;
                 case 4:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m4_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m4_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m4_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m4_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 5:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m5_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m5_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m5_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m5_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 6:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m6_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m6_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m6_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m6_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 7:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m7_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m7_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m7_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m7_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 8:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m8_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m8_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m8_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m8_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 9:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m9_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m9_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m9_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m9_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 10:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m10_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m10_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m10_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m10_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 11:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m11_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m11_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m11_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m11_stop1;
-                            break;
-                        default:
-                            return;
-                    }
-                    break;
-                case 12:
-                    switch (bitID)
-                    {
-                        case 1:
-                            lmtbit = label_m12_positivebit;
-                            break;
-                        case 2:
-                            lmtbit = label_m12_nagetivebit;
-                            break;
-                        case 3:
-                            lmtbit = label_m12_stop0;
-                            break;
-                        case 4:
-                            lmtbit = label_m12_stop1;
-                            break;
-                        default:
-                            return;
-                    }
+                    lmtbit = motorlist[id].showL_stop1;
                     break;
                 default:
                     return;
@@ -1132,11 +982,12 @@ namespace Motor
         public TextBox baseTB_speedUp;
 
         /*show result*/
+        public Label showL_state;
         public Label showL_timePosition;
         public Label showL_finalPosition;
         public Label showL_speed;
-        public Label showL_positiveBit;
-        public Label showL_nagativeBit;
+        public Label showL_lmtP;
+        public Label showL_lmtN;
         public Label showL_stop0;
         public Label showL_stop1;
 

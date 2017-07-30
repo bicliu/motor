@@ -21,6 +21,7 @@
 ********************************************************************************************/
 #ifndef _PUBLIC_H_
 #define _PUBLIC_H_
+#include "stm32f4xx.h"
 
 extern uint32_t PB1_TIM_ARR;
 extern uint16_t PB1_TIM_PSC;
@@ -605,5 +606,14 @@ extern uint32_t TIM_CLOCK_BASE;
 #define MYTIMER_TIM_ITFLAG  TIM_FLAG_Update
 #define MYTIMER_TIM_IT      TIM_IT_Update
 #define MYTIMER_TIM_CNL     TIMR_CNL_1
+
+//My Timer tim 7
+#define MYTIMER7_ISAPB1      1
+#define MYTIMER7_TIM_RCC     RCC_APB1Periph_TIM7
+#define MYTIMER7_TIM_IRQN    TIM7_IRQn
+#define MYTIMER7_TIM         TIM7
+#define MYTIMER7_TIM_ITFLAG  TIM_FLAG_Update
+#define MYTIMER7_TIM_IT      TIM_IT_Update
+#define MYTIMER7_TIM_CNL     TIMR_CNL_1
 
 #endif

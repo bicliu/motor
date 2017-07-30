@@ -7,6 +7,8 @@
 /* Private define ------------------------------------------------------------*/
 #define USART_INTERRUPT_PRIORITY   0
 #define USART_INTERRUPT_SUB_PRI    3
+
+#define MYUSART_SENDBUF_SIZE 1024
 #ifdef __GNUC__
   /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
      set to 'Yes') calls __io_putchar() */
@@ -19,6 +21,10 @@
 /* Private variables ---------------------------------------------------------*/
 uint32_t DEFAULT_BAUD_GSM = 115200;
 USART_Para usart_array[USART_NUM];
+
+uint8_t myusart_txbuf_head[USART_NUM] = {0,0,0};
+uint8_t myusart_txbuf_tail[USART_NUM] = {0,0,0};
+char myusart_sendbuf[USART_NUM][MYUSART_SENDBUF_SIZE];
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 void MYUSART_Puts(uint8_t i, char * str);
@@ -301,6 +307,23 @@ void MYUSART_Puts(uint8_t i, char * str)
 	}
 }
 
+void MYUSART_ToBuf(uint8_t i, char * str)
+{
+	uint8_t buftail = myusart_txbuf_tail[i];
+	while(*str)
+	{
+		buftail++;
+		if(buftail == (uint8_t)MYUSART_SENDBUF_SIZE)
+			buftail = 0;
+		
+		if(buftail == myusart_txbuf_head[i])
+			return;
+		
+		myusart_sendbuf[i][buftail] = *str++;
+	}
+	myusart_txbuf_tail[i] = buftail;
+}
+
 void MYUSART_Send(uint8_t i, const char* fmt,...)
 {
   va_list ap;
@@ -311,5 +334,12 @@ void MYUSART_Send(uint8_t i, const char* fmt,...)
   va_start(ap,fmt);
   vsprintf(string,fmt,ap);
   va_end(ap);
-  MYUSART_Puts(i, string);
+  //MYUSART_Puts(i, string);
+	MYUSART_ToBuf(i, string);
+}
+
+void MYUSART_SendBuf(uint8_t i)
+{
+	char string[64];
+	memset(string, 0, 64);
 }

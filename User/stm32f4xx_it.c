@@ -276,6 +276,11 @@ void TIM6_DAC_IRQHandler(void)
 	MyTimer_IT_Handler();
 }
 
+void TIM7_IRQHandler(void)
+{
+	MyTimer7_IT_Handler();
+}
+
 void TIM8_CC_IRQHandler(void)
 {
 	TIM_IT_Handler(TIMER8);

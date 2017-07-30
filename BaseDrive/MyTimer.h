@@ -26,4 +26,9 @@
 void MyTimer_Start(void);
 void MyTimer_IT_Handler(void);
 
+void MyTimer7_Start(void);
+void MyTimer7_IT_Handler(void);
+void MYTimer7_Run(void);
+void MYTimer7_Stop(void);
+
 #endif

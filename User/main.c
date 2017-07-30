@@ -50,6 +50,9 @@ int main(void)
 	Motor_paraset();
 	Motor_Init();
 	
+	//Motor_setFrequency(MOTOR1, 500,1000,50);
+	//Motor_Run(MOTOR1);
+	
 	debug("\r\nWelcome to WaveShare STM32F4 series MCU Board Open407Z\r\n");
 	//Light_13_ON();
 	//Light_14_ON();

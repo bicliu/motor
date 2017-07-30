@@ -1,5 +1,6 @@
 #ifndef _GPIO_H_
 #define _GIPO_H_
+#include "stm32f4xx.h"
 
 #define LED1               0
 #define LED2               1
