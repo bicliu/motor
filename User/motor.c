@@ -473,11 +473,32 @@ void Motor_setFrequency(uint8_t motor_id, uint32_t i_init, uint32_t i_final, uin
 	}
 }
 
-void Motor_Run(uint8_t motor_id)
+void Motor_Enable(uint8_t motor_id)
 {
 	if(motor_id < MOTOR_NUM)
 	{
 		Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_ENABLE);
+		debug("Set Motor %d enable\r\n", motor_id);
+	}
+}
+
+	
+void Motor_Disable(uint8_t motor_id)
+{
+	if(motor_id < MOTOR_NUM)
+	{
+		Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_DISABLE);
+		debug("Set Motor %d disable\r\n", motor_id);
+	}
+}
+
+
+void Motor_Run(uint8_t motor_id)
+{
+	if(motor_id < MOTOR_NUM)
+	{
+		//Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_ENABLE);
+		//Motor_Enable(motor_id);
 		Timer_Run(motor_array[motor_id].tim_id);
 	}
 }
@@ -487,7 +508,8 @@ void Motor_Stop(uint8_t motor_id)
 	if(motor_id < MOTOR_NUM)
 	{
 		Timer_Stop(motor_array[motor_id].tim_id);
-		Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_DISABLE);
+		//Motor_Disable(motor_id);
+		//Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_DISABLE);
 	}
 }
 

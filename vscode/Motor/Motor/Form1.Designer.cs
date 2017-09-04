@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_base = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.btn_enable_1 = new System.Windows.Forms.Button();
             this.button_motor_start = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton_negative = new System.Windows.Forms.RadioButton();
@@ -388,6 +390,7 @@
             this.button_motor_clear = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_base.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage_IO.SuspendLayout();
@@ -414,6 +417,7 @@
             // 
             // tabPage_base
             // 
+            this.tabPage_base.Controls.Add(this.groupBox8);
             this.tabPage_base.Controls.Add(this.button_motor_start);
             this.tabPage_base.Controls.Add(this.groupBox2);
             this.tabPage_base.Controls.Add(this.groupBox1);
@@ -425,9 +429,31 @@
             this.tabPage_base.Text = "基础类驱动";
             this.tabPage_base.UseVisualStyleBackColor = true;
             // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.btn_enable_1);
+            this.groupBox8.Location = new System.Drawing.Point(152, 409);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(423, 100);
+            this.groupBox8.TabIndex = 3;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = " 电机上电";
+            // 
+            // btn_enable_1
+            // 
+            this.btn_enable_1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_1.Location = new System.Drawing.Point(51, 28);
+            this.btn_enable_1.Name = "btn_enable_1";
+            this.btn_enable_1.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_1.TabIndex = 0;
+            this.btn_enable_1.Tag = "1";
+            this.btn_enable_1.Text = "OFF";
+            this.btn_enable_1.UseVisualStyleBackColor = false;
+            this.btn_enable_1.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
             // button_motor_start
             // 
-            this.button_motor_start.Location = new System.Drawing.Point(178, 472);
+            this.button_motor_start.Location = new System.Drawing.Point(11, 497);
             this.button_motor_start.Name = "button_motor_start";
             this.button_motor_start.Size = new System.Drawing.Size(75, 23);
             this.button_motor_start.TabIndex = 2;
@@ -439,9 +465,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton_negative);
             this.groupBox2.Controls.Add(this.radioButton_positive);
-            this.groupBox2.Location = new System.Drawing.Point(19, 427);
+            this.groupBox2.Location = new System.Drawing.Point(11, 409);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(123, 81);
+            this.groupBox2.Size = new System.Drawing.Size(101, 78);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "运动方向";
@@ -3521,195 +3547,195 @@
             this.label_m1_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m1_stop0.TabIndex = 80;
             // 
-            // label_m12_nagetivebit
+            // label_m12_lmtn
             // 
             this.label_m12_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m12_lmtn.Location = new System.Drawing.Point(445, 369);
-            this.label_m12_lmtn.Name = "label_m12_nagetivebit";
+            this.label_m12_lmtn.Name = "label_m12_lmtn";
             this.label_m12_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m12_lmtn.TabIndex = 79;
             // 
-            // label_m11_nagetivebit
+            // label_m11_lmtn
             // 
             this.label_m11_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m11_lmtn.Location = new System.Drawing.Point(445, 340);
-            this.label_m11_lmtn.Name = "label_m11_nagetivebit";
+            this.label_m11_lmtn.Name = "label_m11_lmtn";
             this.label_m11_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m11_lmtn.TabIndex = 78;
             // 
-            // label_m10_nagetivebit
+            // label_m10_lmtn
             // 
             this.label_m10_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m10_lmtn.Location = new System.Drawing.Point(445, 309);
-            this.label_m10_lmtn.Name = "label_m10_nagetivebit";
+            this.label_m10_lmtn.Name = "label_m10_lmtn";
             this.label_m10_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m10_lmtn.TabIndex = 77;
             // 
-            // label_m9_nagetivebit
+            // label_m9_lmtn
             // 
             this.label_m9_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m9_lmtn.Location = new System.Drawing.Point(445, 280);
-            this.label_m9_lmtn.Name = "label_m9_nagetivebit";
+            this.label_m9_lmtn.Name = "label_m9_lmtn";
             this.label_m9_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m9_lmtn.TabIndex = 76;
             // 
-            // label_m8_nagetivebit
+            // label_m8_lmtn
             // 
             this.label_m8_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m8_lmtn.Location = new System.Drawing.Point(445, 249);
-            this.label_m8_lmtn.Name = "label_m8_nagetivebit";
+            this.label_m8_lmtn.Name = "label_m8_lmtn";
             this.label_m8_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m8_lmtn.TabIndex = 75;
             // 
-            // label_m7_nagetivebit
+            // label_m7_lmtn
             // 
             this.label_m7_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m7_lmtn.Location = new System.Drawing.Point(445, 220);
-            this.label_m7_lmtn.Name = "label_m7_nagetivebit";
+            this.label_m7_lmtn.Name = "label_m7_lmtn";
             this.label_m7_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m7_lmtn.TabIndex = 74;
             // 
-            // label_m6_nagetivebit
+            // label_m6_lmtn
             // 
             this.label_m6_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m6_lmtn.Location = new System.Drawing.Point(445, 189);
-            this.label_m6_lmtn.Name = "label_m6_nagetivebit";
+            this.label_m6_lmtn.Name = "label_m6_lmtn";
             this.label_m6_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m6_lmtn.TabIndex = 73;
             // 
-            // label_m5_nagetivebit
+            // label_m5_lmtn
             // 
             this.label_m5_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m5_lmtn.Location = new System.Drawing.Point(445, 160);
-            this.label_m5_lmtn.Name = "label_m5_nagetivebit";
+            this.label_m5_lmtn.Name = "label_m5_lmtn";
             this.label_m5_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m5_lmtn.TabIndex = 72;
             // 
-            // label_m4_nagetivebit
+            // label_m4_lmtn
             // 
             this.label_m4_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m4_lmtn.Location = new System.Drawing.Point(445, 129);
-            this.label_m4_lmtn.Name = "label_m4_nagetivebit";
+            this.label_m4_lmtn.Name = "label_m4_lmtn";
             this.label_m4_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m4_lmtn.TabIndex = 71;
             // 
-            // label_m3_nagetivebit
+            // label_m3_lmtn
             // 
             this.label_m3_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m3_lmtn.Location = new System.Drawing.Point(445, 100);
-            this.label_m3_lmtn.Name = "label_m3_nagetivebit";
+            this.label_m3_lmtn.Name = "label_m3_lmtn";
             this.label_m3_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m3_lmtn.TabIndex = 70;
             // 
-            // label_m2_nagetivebit
+            // label_m2_lmtn
             // 
             this.label_m2_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m2_lmtn.Location = new System.Drawing.Point(445, 69);
-            this.label_m2_lmtn.Name = "label_m2_nagetivebit";
+            this.label_m2_lmtn.Name = "label_m2_lmtn";
             this.label_m2_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m2_lmtn.TabIndex = 69;
             // 
-            // label_m1_nagetivebit
+            // label_m1_lmtn
             // 
             this.label_m1_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m1_lmtn.Location = new System.Drawing.Point(445, 40);
-            this.label_m1_lmtn.Name = "label_m1_nagetivebit";
+            this.label_m1_lmtn.Name = "label_m1_lmtn";
             this.label_m1_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m1_lmtn.TabIndex = 68;
             // 
-            // label_m12_positivebit
+            // label_m12_lmtp
             // 
             this.label_m12_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m12_lmtp.Location = new System.Drawing.Point(384, 369);
-            this.label_m12_lmtp.Name = "label_m12_positivebit";
+            this.label_m12_lmtp.Name = "label_m12_lmtp";
             this.label_m12_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m12_lmtp.TabIndex = 67;
             // 
-            // label_m11_positivebit
+            // label_m11_lmtp
             // 
             this.label_m11_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m11_lmtp.Location = new System.Drawing.Point(384, 340);
-            this.label_m11_lmtp.Name = "label_m11_positivebit";
+            this.label_m11_lmtp.Name = "label_m11_lmtp";
             this.label_m11_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m11_lmtp.TabIndex = 66;
             // 
-            // label_m10_positivebit
+            // label_m10_lmtp
             // 
             this.label_m10_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m10_lmtp.Location = new System.Drawing.Point(384, 309);
-            this.label_m10_lmtp.Name = "label_m10_positivebit";
+            this.label_m10_lmtp.Name = "label_m10_lmtp";
             this.label_m10_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m10_lmtp.TabIndex = 65;
             // 
-            // label_m9_positivebit
+            // label_m9_lmtp
             // 
             this.label_m9_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m9_lmtp.Location = new System.Drawing.Point(384, 280);
-            this.label_m9_lmtp.Name = "label_m9_positivebit";
+            this.label_m9_lmtp.Name = "label_m9_lmtp";
             this.label_m9_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m9_lmtp.TabIndex = 64;
             // 
-            // label_m8_positivebit
+            // label_m8_lmtp
             // 
             this.label_m8_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m8_lmtp.Location = new System.Drawing.Point(384, 249);
-            this.label_m8_lmtp.Name = "label_m8_positivebit";
+            this.label_m8_lmtp.Name = "label_m8_lmtp";
             this.label_m8_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m8_lmtp.TabIndex = 63;
             // 
-            // label_m7_positivebit
+            // label_m7_lmtp
             // 
             this.label_m7_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m7_lmtp.Location = new System.Drawing.Point(384, 220);
-            this.label_m7_lmtp.Name = "label_m7_positivebit";
+            this.label_m7_lmtp.Name = "label_m7_lmtp";
             this.label_m7_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m7_lmtp.TabIndex = 62;
             // 
-            // label_m6_positivebit
+            // label_m6_lmtp
             // 
             this.label_m6_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m6_lmtp.Location = new System.Drawing.Point(384, 189);
-            this.label_m6_lmtp.Name = "label_m6_positivebit";
+            this.label_m6_lmtp.Name = "label_m6_lmtp";
             this.label_m6_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m6_lmtp.TabIndex = 61;
             // 
-            // label_m5_positivebit
+            // label_m5_lmtp
             // 
             this.label_m5_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m5_lmtp.Location = new System.Drawing.Point(384, 160);
-            this.label_m5_lmtp.Name = "label_m5_positivebit";
+            this.label_m5_lmtp.Name = "label_m5_lmtp";
             this.label_m5_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m5_lmtp.TabIndex = 60;
             // 
-            // label_m4_positivebit
+            // label_m4_lmtp
             // 
             this.label_m4_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m4_lmtp.Location = new System.Drawing.Point(384, 129);
-            this.label_m4_lmtp.Name = "label_m4_positivebit";
+            this.label_m4_lmtp.Name = "label_m4_lmtp";
             this.label_m4_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m4_lmtp.TabIndex = 59;
             // 
-            // label_m3_positivebit
+            // label_m3_lmtp
             // 
             this.label_m3_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m3_lmtp.Location = new System.Drawing.Point(384, 100);
-            this.label_m3_lmtp.Name = "label_m3_positivebit";
+            this.label_m3_lmtp.Name = "label_m3_lmtp";
             this.label_m3_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m3_lmtp.TabIndex = 58;
             // 
-            // label_m2_positivebit
+            // label_m2_lmtp
             // 
             this.label_m2_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m2_lmtp.Location = new System.Drawing.Point(384, 69);
-            this.label_m2_lmtp.Name = "label_m2_positivebit";
+            this.label_m2_lmtp.Name = "label_m2_lmtp";
             this.label_m2_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m2_lmtp.TabIndex = 57;
             // 
-            // label_m1_positivebit
+            // label_m1_lmtp
             // 
             this.label_m1_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label_m1_lmtp.Location = new System.Drawing.Point(384, 40);
-            this.label_m1_lmtp.Name = "label_m1_positivebit";
+            this.label_m1_lmtp.Name = "label_m1_lmtp";
             this.label_m1_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m1_lmtp.TabIndex = 56;
             // 
@@ -4248,6 +4274,7 @@
             this.Name = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage_base.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -4629,6 +4656,8 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button btn_enable_1;
     }
 }
 

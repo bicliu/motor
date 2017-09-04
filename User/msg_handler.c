@@ -155,6 +155,38 @@ void cmd_process(void)
 				}
 			}
 		}
+		else if(0 == strcmp(p,"CMD_ENABLE"))//CMD_ENABLE#ID@XX#BIT@XX
+		{
+			p = strtok(NULL, MSG_SPILT);
+			if(p)//"ID@01"
+			{
+				id = (uint8_t)strtol((p+3), &ptmp,10);
+				if(id > MOTOR_NUM && 0 == id)
+				{
+					debug("MOTOR%d is not exist!\r\n", id);
+					//dma_debug("TIM%d is not exist!\r\n", id);
+					return;
+				}
+				p = strtok(NULL, MSG_SPILT);
+				if(p)//BIT@1
+				{
+					bit = (uint8_t)strtol((p+4), &ptmp,10);
+					//Timer_set_step_num((uint8_t)(id - 1), value);
+					//Relay_writebit((uint8_t)(id - 1), bit);
+					if(bit == 0)
+					{
+						Motor_Disable(id - 1);
+					}
+					else
+					{
+						Motor_Enable(id - 1);
+					}
+					//debug("Set Motor enable %d = %d\r\n", id, bit);
+					//dma_debug("Set TIM%d pwm times = %d\r\n", id, value);
+					return;
+				}
+			}
+		}
 	}
 	//USART1_Puts(cmd_buf);
 	debug("!unknow msg: ");

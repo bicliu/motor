@@ -405,6 +405,28 @@ void Timer_Run(uint8_t timer_id)
 	timer = timer_array[timer_id];
 	//TIM_ARRPreloadConfig(timer.tim_name, ENABLE);
 	
+	switch(timer.tim_channel)
+	{
+		case TIMR_CNL_1:
+			TIM_SelectOCxM(timer.tim_name, TIM_Channel_1, TIM_OCMode_PWM2); 
+		  TIM_CCxCmd(timer.tim_name, TIM_Channel_1, TIM_CCx_Enable);
+			break;
+		case TIMR_CNL_2:
+			TIM_SelectOCxM(timer.tim_name, TIM_Channel_2, TIM_OCMode_PWM2); 
+		  TIM_CCxCmd(timer.tim_name, TIM_Channel_2, TIM_CCx_Enable);
+			break;
+		case TIMR_CNL_3:
+			TIM_SelectOCxM(timer.tim_name, TIM_Channel_3, TIM_OCMode_PWM2); 
+		  TIM_CCxCmd(timer.tim_name, TIM_Channel_3, TIM_CCx_Enable);
+			break;
+		case TIMR_CNL_4:
+			TIM_SelectOCxM(timer.tim_name, TIM_Channel_4, TIM_OCMode_PWM2); 
+		  TIM_CCxCmd(timer.tim_name, TIM_Channel_4, TIM_CCx_Enable);
+			break;
+		default:
+			break;
+	}
+	
 	/*clear flag & enable IT*/
 	TIM_ClearFlag(timer.tim_name, timer.tim_it_flag);
 	TIM_ITConfig(timer.tim_name,timer.tim_it,ENABLE);
@@ -426,6 +448,24 @@ void Timer_Stop(uint8_t timer_id)
 	TIM_ITConfig(timer_array[timer_id].tim_name,timer_array[timer_id].tim_it,DISABLE);
 	debug("TIM%d close\r\n",(timer_id+1));
 	timer_array[timer_id].step_count = 0;
+	
+	switch(timer_array[timer_id].tim_channel)
+	{
+		case TIMR_CNL_1:
+			TIM_ForcedOC1Config(timer_array[timer_id].tim_name, TIM_ForcedAction_InActive);
+			break;
+		case TIMR_CNL_2:
+			TIM_ForcedOC2Config(timer_array[timer_id].tim_name, TIM_ForcedAction_InActive);
+			break;
+		case TIMR_CNL_3:
+			TIM_ForcedOC3Config(timer_array[timer_id].tim_name, TIM_ForcedAction_InActive);
+			break;
+		case TIMR_CNL_4:
+			TIM_ForcedOC4Config(timer_array[timer_id].tim_name, TIM_ForcedAction_InActive);
+			break;
+		default:
+			break;
+	}
 }
 
 void Timer_set_step_num(uint8_t tim_id, uint32_t s_num)

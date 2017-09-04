@@ -76,6 +76,8 @@ void Motor_set_clockwise(uint8_t motor_id, uint8_t bit);
 void Motor_setFrequency(uint8_t motor_id, uint32_t i_init, uint32_t i_final, uint16_t i_up);
 void Motor_Run(uint8_t motor_id);
 void Motor_Stop(uint8_t motor_id);
+void Motor_Enable(uint8_t motor_id);
+void Motor_Disable(uint8_t motor_id);
 void Motor_ReportBit(uint8_t motor_id);
 void Motor_ReportREAD0(void);
 void Motor_ScanLmtBit(void);

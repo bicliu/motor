@@ -867,8 +867,11 @@ namespace Motor
                 uclockwise = 0;
             }
 
+            //str_cmd = String.Format("CMD_ENABLE#ID@{0}#BIT@1\r\n", index + 1);
+            //SPort_SendData(str_cmd);
+
             str_cmd = String.Format("CMD_RUN#ID@{0}#DESTI@{1}#INITSP@{2}#SP@{3}#SPUP@{4}#CLKW@{5}\r\n",
-                                        index+1,
+                                        index + 1,
                                         Convert.ToInt32(motorlist[index].baseTB_destination.Text),
                                         Convert.ToInt32(motorlist[index].baseTB_initSpeed.Text),
                                         Convert.ToInt32(motorlist[index].baseTB_speed.Text),
@@ -969,6 +972,26 @@ namespace Motor
                 SPort_SendData(str_cmd);
                 button.Text = "OFF";
             }
+        }
+
+        private void btn_enable_Click(object sender, EventArgs e)
+        {
+            string str_cmd;
+            Button btn = (Button)sender;
+            int id = Convert.ToInt32(btn.Tag.ToString());
+            if(btn.BackColor == Color.LightSlateGray)
+            {
+                btn.BackColor = Color.Cyan;
+                btn.Text = "ON";
+                str_cmd = String.Format("CMD_ENABLE#ID@{0}#BIT@1\r\n",id); 
+            }
+            else
+            {
+                btn.BackColor = Color.LightSlateGray;
+                btn.Text = "OFF";
+                str_cmd = String.Format("CMD_ENABLE#ID@{0}#BIT@0\r\n", id);
+            }
+            SPort_SendData(str_cmd);
         }
     }
 
