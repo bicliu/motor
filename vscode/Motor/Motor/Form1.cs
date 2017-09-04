@@ -70,9 +70,9 @@ namespace Motor
             motorlist[0].showL_lmtN = label_m1_lmtn;
             motorlist[0].showL_stop0 = label_m1_stop0;
             motorlist[0].showL_stop1 = label_m1_stop1;
-            motorlist[0].showL_timePosition = label_m1_timeposition;
-            motorlist[0].showL_finalPosition = label_m1_finalposition;
-            motorlist[0].showL_speed = label_m1_speed;
+            //motorlist[0].showL_timePosition = label_m1_timeposition;
+            //motorlist[0].showL_finalPosition = label_m1_finalposition;
+            //motorlist[0].showL_speed = label_m1_speed;
 
             /*motor 2 control list*/
             //base
@@ -105,9 +105,9 @@ namespace Motor
             motorlist[1].showL_lmtN = label_m2_lmtn;
             motorlist[1].showL_stop0 = label_m2_stop0;
             motorlist[1].showL_stop1 = label_m2_stop1;
-            motorlist[1].showL_timePosition = label_m2_timeposition;
-            motorlist[1].showL_finalPosition = label_m2_finalposition;
-            motorlist[1].showL_speed = label_m2_speed;
+            //motorlist[1].showL_timePosition = label_m2_timeposition;
+            //motorlist[1].showL_finalPosition = label_m2_finalposition;
+            //motorlist[1].showL_speed = label_m2_speed;
 
             /*motor 3 control list*/
             //base
@@ -140,9 +140,9 @@ namespace Motor
             motorlist[2].showL_lmtN = label_m3_lmtn;
             motorlist[2].showL_stop0 = label_m3_stop0;
             motorlist[2].showL_stop1 = label_m3_stop1;
-            motorlist[2].showL_timePosition = label_m3_timeposition;
-            motorlist[2].showL_finalPosition = label_m3_finalposition;
-            motorlist[2].showL_speed = label_m3_speed;
+            //motorlist[2].showL_timePosition = label_m3_timeposition;
+            //motorlist[2].showL_finalPosition = label_m3_finalposition;
+            //motorlist[2].showL_speed = label_m3_speed;
 
             /*motor 4 control list*/
             //base
@@ -175,9 +175,9 @@ namespace Motor
             motorlist[3].showL_lmtN = label_m4_lmtn;
             motorlist[3].showL_stop0 = label_m4_stop0;
             motorlist[3].showL_stop1 = label_m4_stop1;
-            motorlist[3].showL_timePosition = label_m4_timeposition;
-            motorlist[3].showL_finalPosition = label_m4_finalposition;
-            motorlist[3].showL_speed = label_m4_speed;
+            //motorlist[3].showL_timePosition = label_m4_timeposition;
+            //motorlist[3].showL_finalPosition = label_m4_finalposition;
+            //motorlist[3].showL_speed = label_m4_speed;
 
             /*motor 5 control list*/
             //base
@@ -210,9 +210,9 @@ namespace Motor
             motorlist[4].showL_lmtN = label_m5_lmtn;
             motorlist[4].showL_stop0 = label_m5_stop0;
             motorlist[4].showL_stop1 = label_m5_stop1;
-            motorlist[4].showL_timePosition = label_m5_timeposition;
-            motorlist[4].showL_finalPosition = label_m5_finalposition;
-            motorlist[4].showL_speed = label_m5_speed;
+            //motorlist[4].showL_timePosition = label_m5_timeposition;
+            //motorlist[4].showL_finalPosition = label_m5_finalposition;
+            //motorlist[4].showL_speed = label_m5_speed;
 
             /*motor 6 control list*/
             //base
@@ -245,9 +245,9 @@ namespace Motor
             motorlist[5].showL_lmtN = label_m6_lmtn;
             motorlist[5].showL_stop0 = label_m6_stop0;
             motorlist[5].showL_stop1 = label_m6_stop1;
-            motorlist[5].showL_timePosition = label_m6_timeposition;
-            motorlist[5].showL_finalPosition = label_m6_finalposition;
-            motorlist[5].showL_speed = label_m6_speed;
+            //motorlist[5].showL_timePosition = label_m6_timeposition;
+            //motorlist[5].showL_finalPosition = label_m6_finalposition;
+            //motorlist[5].showL_speed = label_m6_speed;
 
             /*motor 7 control list*/
             //base
@@ -280,9 +280,9 @@ namespace Motor
             motorlist[6].showL_lmtN = label_m7_lmtn;
             motorlist[6].showL_stop0 = label_m7_stop0;
             motorlist[6].showL_stop1 = label_m7_stop1;
-            motorlist[6].showL_timePosition = label_m7_timeposition;
-            motorlist[6].showL_finalPosition = label_m7_finalposition;
-            motorlist[6].showL_speed = label_m7_speed;
+            //motorlist[6].showL_timePosition = label_m7_timeposition;
+            //motorlist[6].showL_finalPosition = label_m7_finalposition;
+            //motorlist[6].showL_speed = label_m7_speed;
 
             /*motor 8 control list*/
             //base
@@ -315,9 +315,9 @@ namespace Motor
             motorlist[7].showL_lmtN = label_m8_lmtn;
             motorlist[7].showL_stop0 = label_m8_stop0;
             motorlist[7].showL_stop1 = label_m8_stop1;
-            motorlist[7].showL_timePosition = label_m8_timeposition;
-            motorlist[7].showL_finalPosition = label_m8_finalposition;
-            motorlist[7].showL_speed = label_m8_speed;
+            //motorlist[7].showL_timePosition = label_m8_timeposition;
+            //motorlist[7].showL_finalPosition = label_m8_finalposition;
+            //motorlist[7].showL_speed = label_m8_speed;
 
             /*motor 9 control list*/
             //base
@@ -350,9 +350,9 @@ namespace Motor
             motorlist[8].showL_lmtN = label_m9_lmtn;
             motorlist[8].showL_stop0 = label_m9_stop0;
             motorlist[8].showL_stop1 = label_m9_stop1;
-            motorlist[8].showL_timePosition = label_m9_timeposition;
-            motorlist[8].showL_finalPosition = label_m9_finalposition;
-            motorlist[8].showL_speed = label_m9_speed;
+            //motorlist[8].showL_timePosition = label_m9_timeposition;
+            //motorlist[8].showL_finalPosition = label_m9_finalposition;
+            //motorlist[8].showL_speed = label_m9_speed;
 
             /*motor 10 control list*/
             //base
@@ -385,9 +385,9 @@ namespace Motor
             motorlist[9].showL_lmtN = label_m10_lmtn;
             motorlist[9].showL_stop0 = label_m10_stop0;
             motorlist[9].showL_stop1 = label_m10_stop1;
-            motorlist[9].showL_timePosition = label_m10_timeposition;
-            motorlist[9].showL_finalPosition = label_m10_finalposition;
-            motorlist[9].showL_speed = label_m10_speed;
+            //motorlist[9].showL_timePosition = label_m10_timeposition;
+            //motorlist[9].showL_finalPosition = label_m10_finalposition;
+            //motorlist[9].showL_speed = label_m10_speed;
 
             /*motor 11 control list*/
             //base
@@ -420,9 +420,9 @@ namespace Motor
             motorlist[10].showL_lmtN = label_m11_lmtn;
             motorlist[10].showL_stop0 = label_m11_stop0;
             motorlist[10].showL_stop1 = label_m11_stop1;
-            motorlist[10].showL_timePosition = label_m11_timeposition;
-            motorlist[10].showL_finalPosition = label_m11_finalposition;
-            motorlist[10].showL_speed = label_m11_speed;
+            //motorlist[10].showL_timePosition = label_m11_timeposition;
+            //motorlist[10].showL_finalPosition = label_m11_finalposition;
+            //motorlist[10].showL_speed = label_m11_speed;
 
             /*motor 12 control list*/
             //base
@@ -455,9 +455,9 @@ namespace Motor
             motorlist[11].showL_lmtN = label_m12_lmtn;
             motorlist[11].showL_stop0 = label_m12_stop0;
             motorlist[11].showL_stop1 = label_m12_stop1;
-            motorlist[11].showL_timePosition = label_m12_timeposition;
-            motorlist[11].showL_finalPosition = label_m12_finalposition;
-            motorlist[11].showL_speed = label_m12_speed;
+            //motorlist[11].showL_timePosition = label_m12_timeposition;
+            //motorlist[11].showL_finalPosition = label_m12_finalposition;
+            //motorlist[11].showL_speed = label_m12_speed;
         }
 
         private void combobox_default_selected()
@@ -515,6 +515,11 @@ namespace Motor
 
         private void SetMotorState(int id, char state)
         {
+            if(id <= 0 || id > MOTOR_NUMBER)
+            {
+                return;
+            }
+            id --;/*id转数组下标*/
             if(state == 1)
             {
                 motorlist[id].showL_state.BackColor = Color.LightGreen;
@@ -979,7 +984,11 @@ namespace Motor
             string str_cmd;
             Button btn = (Button)sender;
             int id = Convert.ToInt32(btn.Tag.ToString());
-            if(btn.BackColor == Color.LightSlateGray)
+            if (!IsUartOpen())
+            {
+                return;
+            }
+            if (btn.BackColor == Color.LightSlateGray)
             {
                 btn.BackColor = Color.Cyan;
                 btn.Text = "ON";
@@ -992,6 +1001,14 @@ namespace Motor
                 str_cmd = String.Format("CMD_ENABLE#ID@{0}#BIT@0\r\n", id);
             }
             SPort_SendData(str_cmd);
+        }
+
+        private void button_motor_clear_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < MOTOR_NUMBER; i++)
+            {
+                SetMotorState(i + 1, (char)0);
+            }
         }
     }
 

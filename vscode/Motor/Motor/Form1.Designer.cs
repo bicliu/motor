@@ -31,13 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_base = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.btn_enable_1 = new System.Windows.Forms.Button();
             this.button_motor_start = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton_negative = new System.Windows.Forms.RadioButton();
             this.radioButton_positive = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox_m12_speedup = new System.Windows.Forms.TextBox();
             this.textBox_m12_speed = new System.Windows.Forms.TextBox();
             this.textBox_m12_initspeed = new System.Windows.Forms.TextBox();
@@ -102,7 +100,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage_IO = new System.Windows.Forms.TabPage();
             this.button_IO_OUTCLOSE = new System.Windows.Forms.Button();
             this.button_IO_OUTALL = new System.Windows.Forms.Button();
@@ -267,7 +264,6 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.tabPage_uart = new System.Windows.Forms.TabPage();
             this.button_urat_clear = new System.Windows.Forms.Button();
             this.textBox_cmd = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -281,7 +277,6 @@
             this.comboBox_ParityBit = new System.Windows.Forms.ComboBox();
             this.comboBox_BaudRate = new System.Windows.Forms.ComboBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label_m12_stop1 = new System.Windows.Forms.Label();
             this.label_m11_stop1 = new System.Windows.Forms.Label();
             this.label_m10_stop1 = new System.Windows.Forms.Label();
@@ -330,42 +325,6 @@
             this.label_m3_lmtp = new System.Windows.Forms.Label();
             this.label_m2_lmtp = new System.Windows.Forms.Label();
             this.label_m1_lmtp = new System.Windows.Forms.Label();
-            this.label_m12_speed = new System.Windows.Forms.Label();
-            this.label_m11_speed = new System.Windows.Forms.Label();
-            this.label_m10_speed = new System.Windows.Forms.Label();
-            this.label_m9_speed = new System.Windows.Forms.Label();
-            this.label_m8_speed = new System.Windows.Forms.Label();
-            this.label_m7_speed = new System.Windows.Forms.Label();
-            this.label_m6_speed = new System.Windows.Forms.Label();
-            this.label_m5_speed = new System.Windows.Forms.Label();
-            this.label_m4_speed = new System.Windows.Forms.Label();
-            this.label_m3_speed = new System.Windows.Forms.Label();
-            this.label_m2_speed = new System.Windows.Forms.Label();
-            this.label_m1_speed = new System.Windows.Forms.Label();
-            this.label_m12_finalposition = new System.Windows.Forms.Label();
-            this.label_m11_finalposition = new System.Windows.Forms.Label();
-            this.label_m10_finalposition = new System.Windows.Forms.Label();
-            this.label_m9_finalposition = new System.Windows.Forms.Label();
-            this.label_m8_finalposition = new System.Windows.Forms.Label();
-            this.label_m7_finalposition = new System.Windows.Forms.Label();
-            this.label_m6_finalposition = new System.Windows.Forms.Label();
-            this.label_m5_finalposition = new System.Windows.Forms.Label();
-            this.label_m4_finalposition = new System.Windows.Forms.Label();
-            this.label_m3_finalposition = new System.Windows.Forms.Label();
-            this.label_m2_finalposition = new System.Windows.Forms.Label();
-            this.label_m1_finalposition = new System.Windows.Forms.Label();
-            this.label_m12_timeposition = new System.Windows.Forms.Label();
-            this.label_m11_timeposition = new System.Windows.Forms.Label();
-            this.label_m10_timeposition = new System.Windows.Forms.Label();
-            this.label_m9_timeposition = new System.Windows.Forms.Label();
-            this.label_m8_timeposition = new System.Windows.Forms.Label();
-            this.label_m7_timeposition = new System.Windows.Forms.Label();
-            this.label_m6_timeposition = new System.Windows.Forms.Label();
-            this.label_m5_timeposition = new System.Windows.Forms.Label();
-            this.label_m4_timeposition = new System.Windows.Forms.Label();
-            this.label_m3_timeposition = new System.Windows.Forms.Label();
-            this.label_m2_timeposition = new System.Windows.Forms.Label();
-            this.label_m1_timeposition = new System.Windows.Forms.Label();
             this.label_m12 = new System.Windows.Forms.Label();
             this.label_m11 = new System.Windows.Forms.Label();
             this.label_m10 = new System.Windows.Forms.Label();
@@ -382,25 +341,57 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button_motor_stop = new System.Windows.Forms.Button();
             this.button_motor_clear = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_enable_2 = new System.Windows.Forms.Button();
+            this.btn_enable_3 = new System.Windows.Forms.Button();
+            this.btn_enable_4 = new System.Windows.Forms.Button();
+            this.btn_enable_5 = new System.Windows.Forms.Button();
+            this.btn_enable_6 = new System.Windows.Forms.Button();
+            this.btn_enable_7 = new System.Windows.Forms.Button();
+            this.btn_enable_8 = new System.Windows.Forms.Button();
+            this.btn_enable_9 = new System.Windows.Forms.Button();
+            this.btn_enable_10 = new System.Windows.Forms.Button();
+            this.btn_enable_11 = new System.Windows.Forms.Button();
+            this.btn_enable_12 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_base.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabPage_IO.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage_para.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.tabPage_uart.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -408,41 +399,43 @@
             this.tabControl1.Controls.Add(this.tabPage_base);
             this.tabControl1.Controls.Add(this.tabPage_IO);
             this.tabControl1.Controls.Add(this.tabPage_para);
-            this.tabControl1.Controls.Add(this.tabPage_uart);
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(595, 552);
+            this.tabControl1.Size = new System.Drawing.Size(796, 574);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage_base
             // 
-            this.tabPage_base.Controls.Add(this.groupBox8);
+            this.tabPage_base.Controls.Add(this.button_motor_clear);
+            this.tabPage_base.Controls.Add(this.groupBox19);
+            this.tabPage_base.Controls.Add(this.button_motor_stop);
             this.tabPage_base.Controls.Add(this.button_motor_start);
+            this.tabPage_base.Controls.Add(this.groupBox20);
+            this.tabPage_base.Controls.Add(this.groupBox21);
+            this.tabPage_base.Controls.Add(this.groupBox16);
+            this.tabPage_base.Controls.Add(this.groupBox15);
+            this.tabPage_base.Controls.Add(this.groupBox17);
+            this.tabPage_base.Controls.Add(this.groupBox14);
+            this.tabPage_base.Controls.Add(this.groupBox18);
+            this.tabPage_base.Controls.Add(this.groupBox13);
+            this.tabPage_base.Controls.Add(this.groupBox12);
+            this.tabPage_base.Controls.Add(this.groupBox11);
+            this.tabPage_base.Controls.Add(this.groupBox10);
+            this.tabPage_base.Controls.Add(this.groupBox9);
             this.tabPage_base.Controls.Add(this.groupBox2);
-            this.tabPage_base.Controls.Add(this.groupBox1);
             this.tabPage_base.Location = new System.Drawing.Point(4, 22);
             this.tabPage_base.Name = "tabPage_base";
             this.tabPage_base.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_base.Size = new System.Drawing.Size(587, 526);
+            this.tabPage_base.Size = new System.Drawing.Size(788, 548);
             this.tabPage_base.TabIndex = 0;
             this.tabPage_base.Text = "基础类驱动";
             this.tabPage_base.UseVisualStyleBackColor = true;
             // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.btn_enable_1);
-            this.groupBox8.Location = new System.Drawing.Point(152, 409);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(423, 100);
-            this.groupBox8.TabIndex = 3;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = " 电机上电";
-            // 
             // btn_enable_1
             // 
             this.btn_enable_1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btn_enable_1.Location = new System.Drawing.Point(51, 28);
+            this.btn_enable_1.Location = new System.Drawing.Point(642, 10);
             this.btn_enable_1.Name = "btn_enable_1";
             this.btn_enable_1.Size = new System.Drawing.Size(33, 23);
             this.btn_enable_1.TabIndex = 0;
@@ -453,7 +446,7 @@
             // 
             // button_motor_start
             // 
-            this.button_motor_start.Location = new System.Drawing.Point(11, 497);
+            this.button_motor_start.Location = new System.Drawing.Point(463, 508);
             this.button_motor_start.Name = "button_motor_start";
             this.button_motor_start.Size = new System.Drawing.Size(75, 23);
             this.button_motor_start.TabIndex = 2;
@@ -465,9 +458,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton_negative);
             this.groupBox2.Controls.Add(this.radioButton_positive);
-            this.groupBox2.Location = new System.Drawing.Point(11, 409);
+            this.groupBox2.Location = new System.Drawing.Point(19, 489);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(101, 78);
+            this.groupBox2.Size = new System.Drawing.Size(133, 42);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "运动方向";
@@ -475,7 +468,7 @@
             // radioButton_negative
             // 
             this.radioButton_negative.AutoSize = true;
-            this.radioButton_negative.Location = new System.Drawing.Point(36, 50);
+            this.radioButton_negative.Location = new System.Drawing.Point(77, 17);
             this.radioButton_negative.Name = "radioButton_negative";
             this.radioButton_negative.Size = new System.Drawing.Size(47, 16);
             this.radioButton_negative.TabIndex = 1;
@@ -486,7 +479,7 @@
             // 
             this.radioButton_positive.AutoSize = true;
             this.radioButton_positive.Checked = true;
-            this.radioButton_positive.Location = new System.Drawing.Point(36, 28);
+            this.radioButton_positive.Location = new System.Drawing.Point(12, 17);
             this.radioButton_positive.Name = "radioButton_positive";
             this.radioButton_positive.Size = new System.Drawing.Size(47, 16);
             this.radioButton_positive.TabIndex = 0;
@@ -494,508 +487,434 @@
             this.radioButton_positive.Text = "正向";
             this.radioButton_positive.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.textBox_m12_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m12_speed);
-            this.groupBox1.Controls.Add(this.textBox_m12_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m12_destination);
-            this.groupBox1.Controls.Add(this.textBox_m11_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m11_speed);
-            this.groupBox1.Controls.Add(this.textBox_m11_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m11_destination);
-            this.groupBox1.Controls.Add(this.textBox_m10_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m10_speed);
-            this.groupBox1.Controls.Add(this.textBox_m10_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m10_destination);
-            this.groupBox1.Controls.Add(this.textBox_m9_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m9_speed);
-            this.groupBox1.Controls.Add(this.textBox_m9_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m9_destination);
-            this.groupBox1.Controls.Add(this.textBox_m8_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m8_speed);
-            this.groupBox1.Controls.Add(this.textBox_m8_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m8_destination);
-            this.groupBox1.Controls.Add(this.textBox_m7_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m7_speed);
-            this.groupBox1.Controls.Add(this.textBox_m7_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m7_destination);
-            this.groupBox1.Controls.Add(this.textBox_m6_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m6_speed);
-            this.groupBox1.Controls.Add(this.textBox_m6_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m6_destination);
-            this.groupBox1.Controls.Add(this.textBox_m5_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m5_speed);
-            this.groupBox1.Controls.Add(this.textBox_m5_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m5_destination);
-            this.groupBox1.Controls.Add(this.textBox_m4_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m4_speed);
-            this.groupBox1.Controls.Add(this.textBox_m4_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m4_destination);
-            this.groupBox1.Controls.Add(this.textBox_m3_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m3_speed);
-            this.groupBox1.Controls.Add(this.textBox_m3_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m3_destination);
-            this.groupBox1.Controls.Add(this.textBox_m2_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m2_speed);
-            this.groupBox1.Controls.Add(this.textBox_m2_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m2_destination);
-            this.groupBox1.Controls.Add(this.textBox_m1_speedup);
-            this.groupBox1.Controls.Add(this.textBox_m1_speed);
-            this.groupBox1.Controls.Add(this.textBox_m1_initspeed);
-            this.groupBox1.Controls.Add(this.textBox_m1_destination);
-            this.groupBox1.Controls.Add(this.checkBox_m12);
-            this.groupBox1.Controls.Add(this.checkBox_m11);
-            this.groupBox1.Controls.Add(this.checkBox_m10);
-            this.groupBox1.Controls.Add(this.checkBox_m9);
-            this.groupBox1.Controls.Add(this.checkBox_m8);
-            this.groupBox1.Controls.Add(this.checkBox_m7);
-            this.groupBox1.Controls.Add(this.checkBox_m6);
-            this.groupBox1.Controls.Add(this.checkBox_m5);
-            this.groupBox1.Controls.Add(this.checkBox_m4);
-            this.groupBox1.Controls.Add(this.checkBox_m3);
-            this.groupBox1.Controls.Add(this.checkBox_m2);
-            this.groupBox1.Controls.Add(this.checkBox_m1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(567, 391);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
             // textBox_m12_speedup
             // 
-            this.textBox_m12_speedup.Location = new System.Drawing.Point(462, 364);
+            this.textBox_m12_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m12_speedup.Name = "textBox_m12_speedup";
-            this.textBox_m12_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m12_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m12_speedup.TabIndex = 64;
             this.textBox_m12_speedup.Text = "500";
             this.textBox_m12_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m12_speed
             // 
-            this.textBox_m12_speed.Location = new System.Drawing.Point(334, 364);
+            this.textBox_m12_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m12_speed.Name = "textBox_m12_speed";
-            this.textBox_m12_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m12_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m12_speed.TabIndex = 63;
             this.textBox_m12_speed.Text = "1000";
             this.textBox_m12_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m12_initspeed
             // 
-            this.textBox_m12_initspeed.Location = new System.Drawing.Point(206, 364);
+            this.textBox_m12_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m12_initspeed.Name = "textBox_m12_initspeed";
-            this.textBox_m12_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m12_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m12_initspeed.TabIndex = 62;
             this.textBox_m12_initspeed.Text = "800";
             this.textBox_m12_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m12_destination
             // 
-            this.textBox_m12_destination.Location = new System.Drawing.Point(78, 364);
+            this.textBox_m12_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m12_destination.Name = "textBox_m12_destination";
-            this.textBox_m12_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m12_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m12_destination.TabIndex = 61;
             this.textBox_m12_destination.Text = "5000";
             this.textBox_m12_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m11_speedup
             // 
-            this.textBox_m11_speedup.Location = new System.Drawing.Point(462, 334);
+            this.textBox_m11_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m11_speedup.Name = "textBox_m11_speedup";
-            this.textBox_m11_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m11_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m11_speedup.TabIndex = 60;
             this.textBox_m11_speedup.Text = "500";
             this.textBox_m11_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m11_speed
             // 
-            this.textBox_m11_speed.Location = new System.Drawing.Point(334, 334);
+            this.textBox_m11_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m11_speed.Name = "textBox_m11_speed";
-            this.textBox_m11_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m11_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m11_speed.TabIndex = 59;
             this.textBox_m11_speed.Text = "1000";
             this.textBox_m11_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m11_initspeed
             // 
-            this.textBox_m11_initspeed.Location = new System.Drawing.Point(206, 334);
+            this.textBox_m11_initspeed.Location = new System.Drawing.Point(152, 11);
             this.textBox_m11_initspeed.Name = "textBox_m11_initspeed";
-            this.textBox_m11_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m11_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m11_initspeed.TabIndex = 58;
             this.textBox_m11_initspeed.Text = "800";
             this.textBox_m11_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m11_destination
             // 
-            this.textBox_m11_destination.Location = new System.Drawing.Point(78, 334);
+            this.textBox_m11_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m11_destination.Name = "textBox_m11_destination";
-            this.textBox_m11_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m11_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m11_destination.TabIndex = 57;
             this.textBox_m11_destination.Text = "5000";
             this.textBox_m11_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m10_speedup
             // 
-            this.textBox_m10_speedup.Location = new System.Drawing.Point(462, 304);
+            this.textBox_m10_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m10_speedup.Name = "textBox_m10_speedup";
-            this.textBox_m10_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m10_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m10_speedup.TabIndex = 56;
             this.textBox_m10_speedup.Text = "500";
             this.textBox_m10_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m10_speed
             // 
-            this.textBox_m10_speed.Location = new System.Drawing.Point(334, 304);
+            this.textBox_m10_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m10_speed.Name = "textBox_m10_speed";
-            this.textBox_m10_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m10_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m10_speed.TabIndex = 55;
             this.textBox_m10_speed.Text = "1000";
             this.textBox_m10_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m10_initspeed
             // 
-            this.textBox_m10_initspeed.Location = new System.Drawing.Point(206, 304);
+            this.textBox_m10_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m10_initspeed.Name = "textBox_m10_initspeed";
-            this.textBox_m10_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m10_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m10_initspeed.TabIndex = 54;
             this.textBox_m10_initspeed.Text = "800";
             this.textBox_m10_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m10_destination
             // 
-            this.textBox_m10_destination.Location = new System.Drawing.Point(78, 304);
+            this.textBox_m10_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m10_destination.Name = "textBox_m10_destination";
-            this.textBox_m10_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m10_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m10_destination.TabIndex = 53;
             this.textBox_m10_destination.Text = "5000";
             this.textBox_m10_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m9_speedup
             // 
-            this.textBox_m9_speedup.Location = new System.Drawing.Point(462, 274);
+            this.textBox_m9_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m9_speedup.Name = "textBox_m9_speedup";
-            this.textBox_m9_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m9_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m9_speedup.TabIndex = 52;
             this.textBox_m9_speedup.Text = "500";
             this.textBox_m9_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m9_speed
             // 
-            this.textBox_m9_speed.Location = new System.Drawing.Point(334, 274);
+            this.textBox_m9_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m9_speed.Name = "textBox_m9_speed";
-            this.textBox_m9_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m9_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m9_speed.TabIndex = 51;
             this.textBox_m9_speed.Text = "1000";
             this.textBox_m9_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m9_initspeed
             // 
-            this.textBox_m9_initspeed.Location = new System.Drawing.Point(206, 274);
+            this.textBox_m9_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m9_initspeed.Name = "textBox_m9_initspeed";
-            this.textBox_m9_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m9_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m9_initspeed.TabIndex = 50;
             this.textBox_m9_initspeed.Text = "800";
             this.textBox_m9_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m9_destination
             // 
-            this.textBox_m9_destination.Location = new System.Drawing.Point(78, 274);
+            this.textBox_m9_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m9_destination.Name = "textBox_m9_destination";
-            this.textBox_m9_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m9_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m9_destination.TabIndex = 49;
             this.textBox_m9_destination.Text = "5000";
             this.textBox_m9_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m8_speedup
             // 
-            this.textBox_m8_speedup.Location = new System.Drawing.Point(462, 244);
+            this.textBox_m8_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m8_speedup.Name = "textBox_m8_speedup";
-            this.textBox_m8_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m8_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m8_speedup.TabIndex = 48;
             this.textBox_m8_speedup.Text = "500";
             this.textBox_m8_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m8_speed
             // 
-            this.textBox_m8_speed.Location = new System.Drawing.Point(334, 244);
+            this.textBox_m8_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m8_speed.Name = "textBox_m8_speed";
-            this.textBox_m8_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m8_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m8_speed.TabIndex = 47;
             this.textBox_m8_speed.Text = "1000";
             this.textBox_m8_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m8_initspeed
             // 
-            this.textBox_m8_initspeed.Location = new System.Drawing.Point(206, 244);
+            this.textBox_m8_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m8_initspeed.Name = "textBox_m8_initspeed";
-            this.textBox_m8_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m8_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m8_initspeed.TabIndex = 46;
             this.textBox_m8_initspeed.Text = "800";
             this.textBox_m8_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m8_destination
             // 
-            this.textBox_m8_destination.Location = new System.Drawing.Point(78, 244);
+            this.textBox_m8_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m8_destination.Name = "textBox_m8_destination";
-            this.textBox_m8_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m8_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m8_destination.TabIndex = 45;
             this.textBox_m8_destination.Text = "5000";
             this.textBox_m8_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m7_speedup
             // 
-            this.textBox_m7_speedup.Location = new System.Drawing.Point(462, 214);
+            this.textBox_m7_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m7_speedup.Name = "textBox_m7_speedup";
-            this.textBox_m7_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m7_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m7_speedup.TabIndex = 44;
             this.textBox_m7_speedup.Text = "500";
             this.textBox_m7_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m7_speed
             // 
-            this.textBox_m7_speed.Location = new System.Drawing.Point(334, 214);
+            this.textBox_m7_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m7_speed.Name = "textBox_m7_speed";
-            this.textBox_m7_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m7_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m7_speed.TabIndex = 43;
             this.textBox_m7_speed.Text = "1000";
             this.textBox_m7_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m7_initspeed
             // 
-            this.textBox_m7_initspeed.Location = new System.Drawing.Point(206, 214);
+            this.textBox_m7_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m7_initspeed.Name = "textBox_m7_initspeed";
-            this.textBox_m7_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m7_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m7_initspeed.TabIndex = 42;
             this.textBox_m7_initspeed.Text = "800";
             this.textBox_m7_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m7_destination
             // 
-            this.textBox_m7_destination.Location = new System.Drawing.Point(78, 214);
+            this.textBox_m7_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m7_destination.Name = "textBox_m7_destination";
-            this.textBox_m7_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m7_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m7_destination.TabIndex = 41;
             this.textBox_m7_destination.Text = "5000";
             this.textBox_m7_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m6_speedup
             // 
-            this.textBox_m6_speedup.Location = new System.Drawing.Point(462, 184);
+            this.textBox_m6_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m6_speedup.Name = "textBox_m6_speedup";
-            this.textBox_m6_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m6_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m6_speedup.TabIndex = 40;
             this.textBox_m6_speedup.Text = "500";
             this.textBox_m6_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m6_speed
             // 
-            this.textBox_m6_speed.Location = new System.Drawing.Point(334, 184);
+            this.textBox_m6_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m6_speed.Name = "textBox_m6_speed";
-            this.textBox_m6_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m6_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m6_speed.TabIndex = 39;
             this.textBox_m6_speed.Text = "1000";
             this.textBox_m6_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m6_initspeed
             // 
-            this.textBox_m6_initspeed.Location = new System.Drawing.Point(206, 184);
+            this.textBox_m6_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m6_initspeed.Name = "textBox_m6_initspeed";
-            this.textBox_m6_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m6_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m6_initspeed.TabIndex = 38;
             this.textBox_m6_initspeed.Text = "800";
             this.textBox_m6_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m6_destination
             // 
-            this.textBox_m6_destination.Location = new System.Drawing.Point(78, 184);
+            this.textBox_m6_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m6_destination.Name = "textBox_m6_destination";
-            this.textBox_m6_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m6_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m6_destination.TabIndex = 37;
             this.textBox_m6_destination.Text = "5000";
             this.textBox_m6_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m5_speedup
             // 
-            this.textBox_m5_speedup.Location = new System.Drawing.Point(462, 154);
+            this.textBox_m5_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m5_speedup.Name = "textBox_m5_speedup";
-            this.textBox_m5_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m5_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m5_speedup.TabIndex = 36;
             this.textBox_m5_speedup.Text = "500";
             this.textBox_m5_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m5_speed
             // 
-            this.textBox_m5_speed.Location = new System.Drawing.Point(334, 154);
+            this.textBox_m5_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m5_speed.Name = "textBox_m5_speed";
-            this.textBox_m5_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m5_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m5_speed.TabIndex = 35;
             this.textBox_m5_speed.Text = "1000";
             this.textBox_m5_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m5_initspeed
             // 
-            this.textBox_m5_initspeed.Location = new System.Drawing.Point(206, 154);
+            this.textBox_m5_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m5_initspeed.Name = "textBox_m5_initspeed";
-            this.textBox_m5_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m5_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m5_initspeed.TabIndex = 34;
             this.textBox_m5_initspeed.Text = "800";
             this.textBox_m5_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m5_destination
             // 
-            this.textBox_m5_destination.Location = new System.Drawing.Point(78, 154);
+            this.textBox_m5_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m5_destination.Name = "textBox_m5_destination";
-            this.textBox_m5_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m5_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m5_destination.TabIndex = 33;
             this.textBox_m5_destination.Text = "5000";
             this.textBox_m5_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m4_speedup
             // 
-            this.textBox_m4_speedup.Location = new System.Drawing.Point(462, 124);
+            this.textBox_m4_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m4_speedup.Name = "textBox_m4_speedup";
-            this.textBox_m4_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m4_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m4_speedup.TabIndex = 32;
             this.textBox_m4_speedup.Text = "500";
             this.textBox_m4_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m4_speed
             // 
-            this.textBox_m4_speed.Location = new System.Drawing.Point(334, 124);
+            this.textBox_m4_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m4_speed.Name = "textBox_m4_speed";
-            this.textBox_m4_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m4_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m4_speed.TabIndex = 31;
             this.textBox_m4_speed.Text = "1000";
             this.textBox_m4_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m4_initspeed
             // 
-            this.textBox_m4_initspeed.Location = new System.Drawing.Point(206, 124);
+            this.textBox_m4_initspeed.Location = new System.Drawing.Point(152, 11);
             this.textBox_m4_initspeed.Name = "textBox_m4_initspeed";
-            this.textBox_m4_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m4_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m4_initspeed.TabIndex = 30;
             this.textBox_m4_initspeed.Text = "800";
             this.textBox_m4_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m4_destination
             // 
-            this.textBox_m4_destination.Location = new System.Drawing.Point(78, 124);
+            this.textBox_m4_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m4_destination.Name = "textBox_m4_destination";
-            this.textBox_m4_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m4_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m4_destination.TabIndex = 29;
             this.textBox_m4_destination.Text = "5000";
             this.textBox_m4_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m3_speedup
             // 
-            this.textBox_m3_speedup.Location = new System.Drawing.Point(462, 94);
+            this.textBox_m3_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m3_speedup.Name = "textBox_m3_speedup";
-            this.textBox_m3_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m3_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m3_speedup.TabIndex = 28;
             this.textBox_m3_speedup.Text = "500";
             this.textBox_m3_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m3_speed
             // 
-            this.textBox_m3_speed.Location = new System.Drawing.Point(334, 94);
+            this.textBox_m3_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m3_speed.Name = "textBox_m3_speed";
-            this.textBox_m3_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m3_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m3_speed.TabIndex = 27;
             this.textBox_m3_speed.Text = "1000";
             this.textBox_m3_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m3_initspeed
             // 
-            this.textBox_m3_initspeed.Location = new System.Drawing.Point(206, 94);
+            this.textBox_m3_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m3_initspeed.Name = "textBox_m3_initspeed";
-            this.textBox_m3_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m3_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m3_initspeed.TabIndex = 26;
             this.textBox_m3_initspeed.Text = "800";
             this.textBox_m3_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m3_destination
             // 
-            this.textBox_m3_destination.Location = new System.Drawing.Point(78, 94);
+            this.textBox_m3_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m3_destination.Name = "textBox_m3_destination";
-            this.textBox_m3_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m3_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m3_destination.TabIndex = 25;
             this.textBox_m3_destination.Text = "5000";
             this.textBox_m3_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m2_speedup
             // 
-            this.textBox_m2_speedup.Location = new System.Drawing.Point(462, 64);
+            this.textBox_m2_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m2_speedup.Name = "textBox_m2_speedup";
-            this.textBox_m2_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m2_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m2_speedup.TabIndex = 24;
             this.textBox_m2_speedup.Text = "500";
             this.textBox_m2_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m2_speed
             // 
-            this.textBox_m2_speed.Location = new System.Drawing.Point(334, 64);
+            this.textBox_m2_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m2_speed.Name = "textBox_m2_speed";
-            this.textBox_m2_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m2_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m2_speed.TabIndex = 23;
             this.textBox_m2_speed.Text = "1000";
             this.textBox_m2_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m2_initspeed
             // 
-            this.textBox_m2_initspeed.Location = new System.Drawing.Point(206, 64);
+            this.textBox_m2_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m2_initspeed.Name = "textBox_m2_initspeed";
-            this.textBox_m2_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m2_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m2_initspeed.TabIndex = 22;
             this.textBox_m2_initspeed.Text = "800";
             this.textBox_m2_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m2_destination
             // 
-            this.textBox_m2_destination.Location = new System.Drawing.Point(78, 64);
+            this.textBox_m2_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m2_destination.Name = "textBox_m2_destination";
-            this.textBox_m2_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m2_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m2_destination.TabIndex = 21;
             this.textBox_m2_destination.Text = "5000";
             this.textBox_m2_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m1_speedup
             // 
-            this.textBox_m1_speedup.Location = new System.Drawing.Point(462, 34);
+            this.textBox_m1_speedup.Location = new System.Drawing.Point(313, 11);
             this.textBox_m1_speedup.Name = "textBox_m1_speedup";
-            this.textBox_m1_speedup.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m1_speedup.Size = new System.Drawing.Size(51, 21);
             this.textBox_m1_speedup.TabIndex = 20;
             this.textBox_m1_speedup.Text = "500";
             this.textBox_m1_speedup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m1_speed
             // 
-            this.textBox_m1_speed.Location = new System.Drawing.Point(334, 34);
+            this.textBox_m1_speed.Location = new System.Drawing.Point(232, 11);
             this.textBox_m1_speed.Name = "textBox_m1_speed";
-            this.textBox_m1_speed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m1_speed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m1_speed.TabIndex = 19;
             this.textBox_m1_speed.Text = "2000";
             this.textBox_m1_speed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m1_initspeed
             // 
-            this.textBox_m1_initspeed.Location = new System.Drawing.Point(206, 34);
+            this.textBox_m1_initspeed.Location = new System.Drawing.Point(151, 11);
             this.textBox_m1_initspeed.Name = "textBox_m1_initspeed";
-            this.textBox_m1_initspeed.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m1_initspeed.Size = new System.Drawing.Size(51, 21);
             this.textBox_m1_initspeed.TabIndex = 18;
             this.textBox_m1_initspeed.Text = "1800";
             this.textBox_m1_initspeed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
             // 
             // textBox_m1_destination
             // 
-            this.textBox_m1_destination.Location = new System.Drawing.Point(78, 34);
+            this.textBox_m1_destination.Location = new System.Drawing.Point(70, 11);
             this.textBox_m1_destination.Name = "textBox_m1_destination";
-            this.textBox_m1_destination.Size = new System.Drawing.Size(88, 21);
+            this.textBox_m1_destination.Size = new System.Drawing.Size(51, 21);
             this.textBox_m1_destination.TabIndex = 17;
             this.textBox_m1_destination.Text = "5000";
             this.textBox_m1_destination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_check);
@@ -1003,7 +922,7 @@
             // checkBox_m12
             // 
             this.checkBox_m12.AutoSize = true;
-            this.checkBox_m12.Location = new System.Drawing.Point(15, 365);
+            this.checkBox_m12.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m12.Name = "checkBox_m12";
             this.checkBox_m12.Size = new System.Drawing.Size(36, 16);
             this.checkBox_m12.TabIndex = 16;
@@ -1013,7 +932,7 @@
             // checkBox_m11
             // 
             this.checkBox_m11.AutoSize = true;
-            this.checkBox_m11.Location = new System.Drawing.Point(15, 336);
+            this.checkBox_m11.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m11.Name = "checkBox_m11";
             this.checkBox_m11.Size = new System.Drawing.Size(36, 16);
             this.checkBox_m11.TabIndex = 15;
@@ -1023,7 +942,7 @@
             // checkBox_m10
             // 
             this.checkBox_m10.AutoSize = true;
-            this.checkBox_m10.Location = new System.Drawing.Point(15, 306);
+            this.checkBox_m10.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m10.Name = "checkBox_m10";
             this.checkBox_m10.Size = new System.Drawing.Size(36, 16);
             this.checkBox_m10.TabIndex = 14;
@@ -1033,7 +952,7 @@
             // checkBox_m9
             // 
             this.checkBox_m9.AutoSize = true;
-            this.checkBox_m9.Location = new System.Drawing.Point(15, 277);
+            this.checkBox_m9.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m9.Name = "checkBox_m9";
             this.checkBox_m9.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m9.TabIndex = 13;
@@ -1043,7 +962,7 @@
             // checkBox_m8
             // 
             this.checkBox_m8.AutoSize = true;
-            this.checkBox_m8.Location = new System.Drawing.Point(15, 245);
+            this.checkBox_m8.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m8.Name = "checkBox_m8";
             this.checkBox_m8.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m8.TabIndex = 12;
@@ -1053,7 +972,7 @@
             // checkBox_m7
             // 
             this.checkBox_m7.AutoSize = true;
-            this.checkBox_m7.Location = new System.Drawing.Point(15, 216);
+            this.checkBox_m7.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m7.Name = "checkBox_m7";
             this.checkBox_m7.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m7.TabIndex = 11;
@@ -1063,7 +982,7 @@
             // checkBox_m6
             // 
             this.checkBox_m6.AutoSize = true;
-            this.checkBox_m6.Location = new System.Drawing.Point(15, 186);
+            this.checkBox_m6.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m6.Name = "checkBox_m6";
             this.checkBox_m6.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m6.TabIndex = 10;
@@ -1073,7 +992,7 @@
             // checkBox_m5
             // 
             this.checkBox_m5.AutoSize = true;
-            this.checkBox_m5.Location = new System.Drawing.Point(15, 157);
+            this.checkBox_m5.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m5.Name = "checkBox_m5";
             this.checkBox_m5.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m5.TabIndex = 9;
@@ -1083,7 +1002,7 @@
             // checkBox_m4
             // 
             this.checkBox_m4.AutoSize = true;
-            this.checkBox_m4.Location = new System.Drawing.Point(15, 126);
+            this.checkBox_m4.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m4.Name = "checkBox_m4";
             this.checkBox_m4.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m4.TabIndex = 8;
@@ -1093,7 +1012,7 @@
             // checkBox_m3
             // 
             this.checkBox_m3.AutoSize = true;
-            this.checkBox_m3.Location = new System.Drawing.Point(15, 97);
+            this.checkBox_m3.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m3.Name = "checkBox_m3";
             this.checkBox_m3.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m3.TabIndex = 7;
@@ -1103,7 +1022,7 @@
             // checkBox_m2
             // 
             this.checkBox_m2.AutoSize = true;
-            this.checkBox_m2.Location = new System.Drawing.Point(15, 67);
+            this.checkBox_m2.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m2.Name = "checkBox_m2";
             this.checkBox_m2.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m2.TabIndex = 6;
@@ -1113,7 +1032,7 @@
             // checkBox_m1
             // 
             this.checkBox_m1.AutoSize = true;
-            this.checkBox_m1.Location = new System.Drawing.Point(15, 38);
+            this.checkBox_m1.Location = new System.Drawing.Point(16, 14);
             this.checkBox_m1.Name = "checkBox_m1";
             this.checkBox_m1.Size = new System.Drawing.Size(30, 16);
             this.checkBox_m1.TabIndex = 5;
@@ -1123,7 +1042,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(478, 13);
+            this.label5.Location = new System.Drawing.Point(318, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 4;
@@ -1132,7 +1051,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(351, 13);
+            this.label4.Location = new System.Drawing.Point(231, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 3;
@@ -1141,7 +1060,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(223, 13);
+            this.label3.Location = new System.Drawing.Point(150, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 2;
@@ -1150,20 +1069,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 13);
+            this.label2.Location = new System.Drawing.Point(69, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "目标位置";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "电机号";
             // 
             // tabPage_IO
             // 
@@ -1174,7 +1084,7 @@
             this.tabPage_IO.Location = new System.Drawing.Point(4, 22);
             this.tabPage_IO.Name = "tabPage_IO";
             this.tabPage_IO.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_IO.Size = new System.Drawing.Size(587, 526);
+            this.tabPage_IO.Size = new System.Drawing.Size(774, 548);
             this.tabPage_IO.TabIndex = 1;
             this.tabPage_IO.Text = "IO检测";
             this.tabPage_IO.UseVisualStyleBackColor = true;
@@ -1928,7 +1838,7 @@
             this.tabPage_para.Controls.Add(this.groupBox4);
             this.tabPage_para.Location = new System.Drawing.Point(4, 22);
             this.tabPage_para.Name = "tabPage_para";
-            this.tabPage_para.Size = new System.Drawing.Size(587, 526);
+            this.tabPage_para.Size = new System.Drawing.Size(774, 548);
             this.tabPage_para.TabIndex = 2;
             this.tabPage_para.Text = "参数设置";
             this.tabPage_para.UseVisualStyleBackColor = true;
@@ -3088,22 +2998,9 @@
             this.label26.TabIndex = 104;
             this.label26.Text = "电机号";
             // 
-            // tabPage_uart
-            // 
-            this.tabPage_uart.Controls.Add(this.button_urat_clear);
-            this.tabPage_uart.Controls.Add(this.textBox_cmd);
-            this.tabPage_uart.Controls.Add(this.groupBox7);
-            this.tabPage_uart.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_uart.Name = "tabPage_uart";
-            this.tabPage_uart.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_uart.Size = new System.Drawing.Size(587, 526);
-            this.tabPage_uart.TabIndex = 3;
-            this.tabPage_uart.Text = "串口设置";
-            this.tabPage_uart.UseVisualStyleBackColor = true;
-            // 
             // button_urat_clear
             // 
-            this.button_urat_clear.Location = new System.Drawing.Point(430, 471);
+            this.button_urat_clear.Location = new System.Drawing.Point(291, 520);
             this.button_urat_clear.Name = "button_urat_clear";
             this.button_urat_clear.Size = new System.Drawing.Size(75, 23);
             this.button_urat_clear.TabIndex = 20;
@@ -3114,11 +3011,11 @@
             // textBox_cmd
             // 
             this.textBox_cmd.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_cmd.Location = new System.Drawing.Point(27, 129);
+            this.textBox_cmd.Location = new System.Drawing.Point(23, 115);
             this.textBox_cmd.Multiline = true;
             this.textBox_cmd.Name = "textBox_cmd";
             this.textBox_cmd.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_cmd.Size = new System.Drawing.Size(490, 324);
+            this.textBox_cmd.Size = new System.Drawing.Size(343, 380);
             this.textBox_cmd.TabIndex = 19;
             this.textBox_cmd.Text = ">";
             this.textBox_cmd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox_cmd_MouseClick);
@@ -3127,7 +3024,9 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.button_urat_clear);
             this.groupBox7.Controls.Add(this.button_openSP);
+            this.groupBox7.Controls.Add(this.textBox_cmd);
             this.groupBox7.Controls.Add(this.button_scan);
             this.groupBox7.Controls.Add(this.comboBox_serialport);
             this.groupBox7.Controls.Add(this.label45);
@@ -3137,12 +3036,12 @@
             this.groupBox7.Controls.Add(this.comboBox_ParityBit);
             this.groupBox7.Controls.Add(this.comboBox_BaudRate);
             this.groupBox7.Controls.Add(this.label48);
-            this.groupBox7.Location = new System.Drawing.Point(27, 6);
+            this.groupBox7.Location = new System.Drawing.Point(822, 12);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(395, 100);
+            this.groupBox7.Size = new System.Drawing.Size(380, 564);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "串口设置";
+            this.groupBox7.Text = "串口";
             // 
             // button_openSP
             // 
@@ -3242,123 +3141,10 @@
             this.label48.TabIndex = 4;
             this.label48.Text = "校验位";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox3.BackgroundImage")));
-            this.groupBox3.Controls.Add(this.label_m12_stop1);
-            this.groupBox3.Controls.Add(this.label_m11_stop1);
-            this.groupBox3.Controls.Add(this.label_m10_stop1);
-            this.groupBox3.Controls.Add(this.label_m9_stop1);
-            this.groupBox3.Controls.Add(this.label_m8_stop1);
-            this.groupBox3.Controls.Add(this.label_m7_stop1);
-            this.groupBox3.Controls.Add(this.label_m6_stop1);
-            this.groupBox3.Controls.Add(this.label_m5_stop1);
-            this.groupBox3.Controls.Add(this.label_m4_stop1);
-            this.groupBox3.Controls.Add(this.label_m3_stop1);
-            this.groupBox3.Controls.Add(this.label_m2_stop1);
-            this.groupBox3.Controls.Add(this.label_m1_stop1);
-            this.groupBox3.Controls.Add(this.label_m12_stop0);
-            this.groupBox3.Controls.Add(this.label_m11_stop0);
-            this.groupBox3.Controls.Add(this.label_m10_stop0);
-            this.groupBox3.Controls.Add(this.label_m9_stop0);
-            this.groupBox3.Controls.Add(this.label_m8_stop0);
-            this.groupBox3.Controls.Add(this.label_m7_stop0);
-            this.groupBox3.Controls.Add(this.label_m6_stop0);
-            this.groupBox3.Controls.Add(this.label_m5_stop0);
-            this.groupBox3.Controls.Add(this.label_m4_stop0);
-            this.groupBox3.Controls.Add(this.label_m3_stop0);
-            this.groupBox3.Controls.Add(this.label_m2_stop0);
-            this.groupBox3.Controls.Add(this.label_m1_stop0);
-            this.groupBox3.Controls.Add(this.label_m12_lmtn);
-            this.groupBox3.Controls.Add(this.label_m11_lmtn);
-            this.groupBox3.Controls.Add(this.label_m10_lmtn);
-            this.groupBox3.Controls.Add(this.label_m9_lmtn);
-            this.groupBox3.Controls.Add(this.label_m8_lmtn);
-            this.groupBox3.Controls.Add(this.label_m7_lmtn);
-            this.groupBox3.Controls.Add(this.label_m6_lmtn);
-            this.groupBox3.Controls.Add(this.label_m5_lmtn);
-            this.groupBox3.Controls.Add(this.label_m4_lmtn);
-            this.groupBox3.Controls.Add(this.label_m3_lmtn);
-            this.groupBox3.Controls.Add(this.label_m2_lmtn);
-            this.groupBox3.Controls.Add(this.label_m1_lmtn);
-            this.groupBox3.Controls.Add(this.label_m12_lmtp);
-            this.groupBox3.Controls.Add(this.label_m11_lmtp);
-            this.groupBox3.Controls.Add(this.label_m10_lmtp);
-            this.groupBox3.Controls.Add(this.label_m9_lmtp);
-            this.groupBox3.Controls.Add(this.label_m8_lmtp);
-            this.groupBox3.Controls.Add(this.label_m7_lmtp);
-            this.groupBox3.Controls.Add(this.label_m6_lmtp);
-            this.groupBox3.Controls.Add(this.label_m5_lmtp);
-            this.groupBox3.Controls.Add(this.label_m4_lmtp);
-            this.groupBox3.Controls.Add(this.label_m3_lmtp);
-            this.groupBox3.Controls.Add(this.label_m2_lmtp);
-            this.groupBox3.Controls.Add(this.label_m1_lmtp);
-            this.groupBox3.Controls.Add(this.label_m12_speed);
-            this.groupBox3.Controls.Add(this.label_m11_speed);
-            this.groupBox3.Controls.Add(this.label_m10_speed);
-            this.groupBox3.Controls.Add(this.label_m9_speed);
-            this.groupBox3.Controls.Add(this.label_m8_speed);
-            this.groupBox3.Controls.Add(this.label_m7_speed);
-            this.groupBox3.Controls.Add(this.label_m6_speed);
-            this.groupBox3.Controls.Add(this.label_m5_speed);
-            this.groupBox3.Controls.Add(this.label_m4_speed);
-            this.groupBox3.Controls.Add(this.label_m3_speed);
-            this.groupBox3.Controls.Add(this.label_m2_speed);
-            this.groupBox3.Controls.Add(this.label_m1_speed);
-            this.groupBox3.Controls.Add(this.label_m12_finalposition);
-            this.groupBox3.Controls.Add(this.label_m11_finalposition);
-            this.groupBox3.Controls.Add(this.label_m10_finalposition);
-            this.groupBox3.Controls.Add(this.label_m9_finalposition);
-            this.groupBox3.Controls.Add(this.label_m8_finalposition);
-            this.groupBox3.Controls.Add(this.label_m7_finalposition);
-            this.groupBox3.Controls.Add(this.label_m6_finalposition);
-            this.groupBox3.Controls.Add(this.label_m5_finalposition);
-            this.groupBox3.Controls.Add(this.label_m4_finalposition);
-            this.groupBox3.Controls.Add(this.label_m3_finalposition);
-            this.groupBox3.Controls.Add(this.label_m2_finalposition);
-            this.groupBox3.Controls.Add(this.label_m1_finalposition);
-            this.groupBox3.Controls.Add(this.label_m12_timeposition);
-            this.groupBox3.Controls.Add(this.label_m11_timeposition);
-            this.groupBox3.Controls.Add(this.label_m10_timeposition);
-            this.groupBox3.Controls.Add(this.label_m9_timeposition);
-            this.groupBox3.Controls.Add(this.label_m8_timeposition);
-            this.groupBox3.Controls.Add(this.label_m7_timeposition);
-            this.groupBox3.Controls.Add(this.label_m6_timeposition);
-            this.groupBox3.Controls.Add(this.label_m5_timeposition);
-            this.groupBox3.Controls.Add(this.label_m4_timeposition);
-            this.groupBox3.Controls.Add(this.label_m3_timeposition);
-            this.groupBox3.Controls.Add(this.label_m2_timeposition);
-            this.groupBox3.Controls.Add(this.label_m1_timeposition);
-            this.groupBox3.Controls.Add(this.label_m12);
-            this.groupBox3.Controls.Add(this.label_m11);
-            this.groupBox3.Controls.Add(this.label_m10);
-            this.groupBox3.Controls.Add(this.label_m9);
-            this.groupBox3.Controls.Add(this.label_m8);
-            this.groupBox3.Controls.Add(this.label_m7);
-            this.groupBox3.Controls.Add(this.label_m6);
-            this.groupBox3.Controls.Add(this.label_m5);
-            this.groupBox3.Controls.Add(this.label_m4);
-            this.groupBox3.Controls.Add(this.label_m3);
-            this.groupBox3.Controls.Add(this.label_m2);
-            this.groupBox3.Controls.Add(this.label_m1);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(603, 16);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(600, 390);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            // 
             // label_m12_stop1
             // 
             this.label_m12_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m12_stop1.Location = new System.Drawing.Point(564, 369);
+            this.label_m12_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m12_stop1.Name = "label_m12_stop1";
             this.label_m12_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m12_stop1.TabIndex = 103;
@@ -3366,7 +3152,7 @@
             // label_m11_stop1
             // 
             this.label_m11_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m11_stop1.Location = new System.Drawing.Point(564, 340);
+            this.label_m11_stop1.Location = new System.Drawing.Point(586, 15);
             this.label_m11_stop1.Name = "label_m11_stop1";
             this.label_m11_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m11_stop1.TabIndex = 102;
@@ -3374,7 +3160,7 @@
             // label_m10_stop1
             // 
             this.label_m10_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m10_stop1.Location = new System.Drawing.Point(564, 309);
+            this.label_m10_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m10_stop1.Name = "label_m10_stop1";
             this.label_m10_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m10_stop1.TabIndex = 101;
@@ -3382,7 +3168,7 @@
             // label_m9_stop1
             // 
             this.label_m9_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m9_stop1.Location = new System.Drawing.Point(564, 280);
+            this.label_m9_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m9_stop1.Name = "label_m9_stop1";
             this.label_m9_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m9_stop1.TabIndex = 100;
@@ -3390,7 +3176,7 @@
             // label_m8_stop1
             // 
             this.label_m8_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m8_stop1.Location = new System.Drawing.Point(564, 249);
+            this.label_m8_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m8_stop1.Name = "label_m8_stop1";
             this.label_m8_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m8_stop1.TabIndex = 99;
@@ -3398,7 +3184,7 @@
             // label_m7_stop1
             // 
             this.label_m7_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m7_stop1.Location = new System.Drawing.Point(564, 220);
+            this.label_m7_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m7_stop1.Name = "label_m7_stop1";
             this.label_m7_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m7_stop1.TabIndex = 98;
@@ -3406,7 +3192,7 @@
             // label_m6_stop1
             // 
             this.label_m6_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m6_stop1.Location = new System.Drawing.Point(564, 189);
+            this.label_m6_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m6_stop1.Name = "label_m6_stop1";
             this.label_m6_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m6_stop1.TabIndex = 97;
@@ -3414,7 +3200,7 @@
             // label_m5_stop1
             // 
             this.label_m5_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m5_stop1.Location = new System.Drawing.Point(564, 160);
+            this.label_m5_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m5_stop1.Name = "label_m5_stop1";
             this.label_m5_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m5_stop1.TabIndex = 96;
@@ -3422,7 +3208,7 @@
             // label_m4_stop1
             // 
             this.label_m4_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m4_stop1.Location = new System.Drawing.Point(564, 129);
+            this.label_m4_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m4_stop1.Name = "label_m4_stop1";
             this.label_m4_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m4_stop1.TabIndex = 95;
@@ -3430,7 +3216,7 @@
             // label_m3_stop1
             // 
             this.label_m3_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m3_stop1.Location = new System.Drawing.Point(564, 100);
+            this.label_m3_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m3_stop1.Name = "label_m3_stop1";
             this.label_m3_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m3_stop1.TabIndex = 94;
@@ -3438,7 +3224,7 @@
             // label_m2_stop1
             // 
             this.label_m2_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m2_stop1.Location = new System.Drawing.Point(564, 69);
+            this.label_m2_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m2_stop1.Name = "label_m2_stop1";
             this.label_m2_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m2_stop1.TabIndex = 93;
@@ -3446,7 +3232,7 @@
             // label_m1_stop1
             // 
             this.label_m1_stop1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m1_stop1.Location = new System.Drawing.Point(564, 40);
+            this.label_m1_stop1.Location = new System.Drawing.Point(586, 14);
             this.label_m1_stop1.Name = "label_m1_stop1";
             this.label_m1_stop1.Size = new System.Drawing.Size(12, 12);
             this.label_m1_stop1.TabIndex = 92;
@@ -3454,7 +3240,7 @@
             // label_m12_stop0
             // 
             this.label_m12_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m12_stop0.Location = new System.Drawing.Point(505, 369);
+            this.label_m12_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m12_stop0.Name = "label_m12_stop0";
             this.label_m12_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m12_stop0.TabIndex = 91;
@@ -3462,7 +3248,7 @@
             // label_m11_stop0
             // 
             this.label_m11_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m11_stop0.Location = new System.Drawing.Point(505, 340);
+            this.label_m11_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m11_stop0.Name = "label_m11_stop0";
             this.label_m11_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m11_stop0.TabIndex = 90;
@@ -3470,7 +3256,7 @@
             // label_m10_stop0
             // 
             this.label_m10_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m10_stop0.Location = new System.Drawing.Point(505, 309);
+            this.label_m10_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m10_stop0.Name = "label_m10_stop0";
             this.label_m10_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m10_stop0.TabIndex = 89;
@@ -3478,7 +3264,7 @@
             // label_m9_stop0
             // 
             this.label_m9_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m9_stop0.Location = new System.Drawing.Point(505, 280);
+            this.label_m9_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m9_stop0.Name = "label_m9_stop0";
             this.label_m9_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m9_stop0.TabIndex = 88;
@@ -3486,7 +3272,7 @@
             // label_m8_stop0
             // 
             this.label_m8_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m8_stop0.Location = new System.Drawing.Point(505, 249);
+            this.label_m8_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m8_stop0.Name = "label_m8_stop0";
             this.label_m8_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m8_stop0.TabIndex = 87;
@@ -3494,7 +3280,7 @@
             // label_m7_stop0
             // 
             this.label_m7_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m7_stop0.Location = new System.Drawing.Point(505, 220);
+            this.label_m7_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m7_stop0.Name = "label_m7_stop0";
             this.label_m7_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m7_stop0.TabIndex = 86;
@@ -3502,7 +3288,7 @@
             // label_m6_stop0
             // 
             this.label_m6_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m6_stop0.Location = new System.Drawing.Point(505, 189);
+            this.label_m6_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m6_stop0.Name = "label_m6_stop0";
             this.label_m6_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m6_stop0.TabIndex = 85;
@@ -3510,7 +3296,7 @@
             // label_m5_stop0
             // 
             this.label_m5_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m5_stop0.Location = new System.Drawing.Point(505, 160);
+            this.label_m5_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m5_stop0.Name = "label_m5_stop0";
             this.label_m5_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m5_stop0.TabIndex = 84;
@@ -3518,7 +3304,7 @@
             // label_m4_stop0
             // 
             this.label_m4_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m4_stop0.Location = new System.Drawing.Point(505, 129);
+            this.label_m4_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m4_stop0.Name = "label_m4_stop0";
             this.label_m4_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m4_stop0.TabIndex = 83;
@@ -3526,7 +3312,7 @@
             // label_m3_stop0
             // 
             this.label_m3_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m3_stop0.Location = new System.Drawing.Point(505, 100);
+            this.label_m3_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m3_stop0.Name = "label_m3_stop0";
             this.label_m3_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m3_stop0.TabIndex = 82;
@@ -3534,7 +3320,7 @@
             // label_m2_stop0
             // 
             this.label_m2_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m2_stop0.Location = new System.Drawing.Point(505, 69);
+            this.label_m2_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m2_stop0.Name = "label_m2_stop0";
             this.label_m2_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m2_stop0.TabIndex = 81;
@@ -3542,7 +3328,7 @@
             // label_m1_stop0
             // 
             this.label_m1_stop0.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m1_stop0.Location = new System.Drawing.Point(505, 40);
+            this.label_m1_stop0.Location = new System.Drawing.Point(538, 14);
             this.label_m1_stop0.Name = "label_m1_stop0";
             this.label_m1_stop0.Size = new System.Drawing.Size(12, 12);
             this.label_m1_stop0.TabIndex = 80;
@@ -3550,7 +3336,7 @@
             // label_m12_lmtn
             // 
             this.label_m12_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m12_lmtn.Location = new System.Drawing.Point(445, 369);
+            this.label_m12_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m12_lmtn.Name = "label_m12_lmtn";
             this.label_m12_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m12_lmtn.TabIndex = 79;
@@ -3558,7 +3344,7 @@
             // label_m11_lmtn
             // 
             this.label_m11_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m11_lmtn.Location = new System.Drawing.Point(445, 340);
+            this.label_m11_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m11_lmtn.Name = "label_m11_lmtn";
             this.label_m11_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m11_lmtn.TabIndex = 78;
@@ -3566,7 +3352,7 @@
             // label_m10_lmtn
             // 
             this.label_m10_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m10_lmtn.Location = new System.Drawing.Point(445, 309);
+            this.label_m10_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m10_lmtn.Name = "label_m10_lmtn";
             this.label_m10_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m10_lmtn.TabIndex = 77;
@@ -3574,7 +3360,7 @@
             // label_m9_lmtn
             // 
             this.label_m9_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m9_lmtn.Location = new System.Drawing.Point(445, 280);
+            this.label_m9_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m9_lmtn.Name = "label_m9_lmtn";
             this.label_m9_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m9_lmtn.TabIndex = 76;
@@ -3582,7 +3368,7 @@
             // label_m8_lmtn
             // 
             this.label_m8_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m8_lmtn.Location = new System.Drawing.Point(445, 249);
+            this.label_m8_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m8_lmtn.Name = "label_m8_lmtn";
             this.label_m8_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m8_lmtn.TabIndex = 75;
@@ -3590,7 +3376,7 @@
             // label_m7_lmtn
             // 
             this.label_m7_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m7_lmtn.Location = new System.Drawing.Point(445, 220);
+            this.label_m7_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m7_lmtn.Name = "label_m7_lmtn";
             this.label_m7_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m7_lmtn.TabIndex = 74;
@@ -3598,7 +3384,7 @@
             // label_m6_lmtn
             // 
             this.label_m6_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m6_lmtn.Location = new System.Drawing.Point(445, 189);
+            this.label_m6_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m6_lmtn.Name = "label_m6_lmtn";
             this.label_m6_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m6_lmtn.TabIndex = 73;
@@ -3606,7 +3392,7 @@
             // label_m5_lmtn
             // 
             this.label_m5_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m5_lmtn.Location = new System.Drawing.Point(445, 160);
+            this.label_m5_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m5_lmtn.Name = "label_m5_lmtn";
             this.label_m5_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m5_lmtn.TabIndex = 72;
@@ -3614,7 +3400,7 @@
             // label_m4_lmtn
             // 
             this.label_m4_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m4_lmtn.Location = new System.Drawing.Point(445, 129);
+            this.label_m4_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m4_lmtn.Name = "label_m4_lmtn";
             this.label_m4_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m4_lmtn.TabIndex = 71;
@@ -3622,7 +3408,7 @@
             // label_m3_lmtn
             // 
             this.label_m3_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m3_lmtn.Location = new System.Drawing.Point(445, 100);
+            this.label_m3_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m3_lmtn.Name = "label_m3_lmtn";
             this.label_m3_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m3_lmtn.TabIndex = 70;
@@ -3630,7 +3416,7 @@
             // label_m2_lmtn
             // 
             this.label_m2_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m2_lmtn.Location = new System.Drawing.Point(445, 69);
+            this.label_m2_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m2_lmtn.Name = "label_m2_lmtn";
             this.label_m2_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m2_lmtn.TabIndex = 69;
@@ -3638,7 +3424,7 @@
             // label_m1_lmtn
             // 
             this.label_m1_lmtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m1_lmtn.Location = new System.Drawing.Point(445, 40);
+            this.label_m1_lmtn.Location = new System.Drawing.Point(486, 14);
             this.label_m1_lmtn.Name = "label_m1_lmtn";
             this.label_m1_lmtn.Size = new System.Drawing.Size(12, 12);
             this.label_m1_lmtn.TabIndex = 68;
@@ -3646,7 +3432,7 @@
             // label_m12_lmtp
             // 
             this.label_m12_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m12_lmtp.Location = new System.Drawing.Point(384, 369);
+            this.label_m12_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m12_lmtp.Name = "label_m12_lmtp";
             this.label_m12_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m12_lmtp.TabIndex = 67;
@@ -3654,7 +3440,7 @@
             // label_m11_lmtp
             // 
             this.label_m11_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m11_lmtp.Location = new System.Drawing.Point(384, 340);
+            this.label_m11_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m11_lmtp.Name = "label_m11_lmtp";
             this.label_m11_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m11_lmtp.TabIndex = 66;
@@ -3662,7 +3448,7 @@
             // label_m10_lmtp
             // 
             this.label_m10_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m10_lmtp.Location = new System.Drawing.Point(384, 309);
+            this.label_m10_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m10_lmtp.Name = "label_m10_lmtp";
             this.label_m10_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m10_lmtp.TabIndex = 65;
@@ -3670,7 +3456,7 @@
             // label_m9_lmtp
             // 
             this.label_m9_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m9_lmtp.Location = new System.Drawing.Point(384, 280);
+            this.label_m9_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m9_lmtp.Name = "label_m9_lmtp";
             this.label_m9_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m9_lmtp.TabIndex = 64;
@@ -3678,7 +3464,7 @@
             // label_m8_lmtp
             // 
             this.label_m8_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m8_lmtp.Location = new System.Drawing.Point(384, 249);
+            this.label_m8_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m8_lmtp.Name = "label_m8_lmtp";
             this.label_m8_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m8_lmtp.TabIndex = 63;
@@ -3686,7 +3472,7 @@
             // label_m7_lmtp
             // 
             this.label_m7_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m7_lmtp.Location = new System.Drawing.Point(384, 220);
+            this.label_m7_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m7_lmtp.Name = "label_m7_lmtp";
             this.label_m7_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m7_lmtp.TabIndex = 62;
@@ -3694,7 +3480,7 @@
             // label_m6_lmtp
             // 
             this.label_m6_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m6_lmtp.Location = new System.Drawing.Point(384, 189);
+            this.label_m6_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m6_lmtp.Name = "label_m6_lmtp";
             this.label_m6_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m6_lmtp.TabIndex = 61;
@@ -3702,7 +3488,7 @@
             // label_m5_lmtp
             // 
             this.label_m5_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m5_lmtp.Location = new System.Drawing.Point(384, 160);
+            this.label_m5_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m5_lmtp.Name = "label_m5_lmtp";
             this.label_m5_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m5_lmtp.TabIndex = 60;
@@ -3710,7 +3496,7 @@
             // label_m4_lmtp
             // 
             this.label_m4_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m4_lmtp.Location = new System.Drawing.Point(384, 129);
+            this.label_m4_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m4_lmtp.Name = "label_m4_lmtp";
             this.label_m4_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m4_lmtp.TabIndex = 59;
@@ -3718,7 +3504,7 @@
             // label_m3_lmtp
             // 
             this.label_m3_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m3_lmtp.Location = new System.Drawing.Point(384, 100);
+            this.label_m3_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m3_lmtp.Name = "label_m3_lmtp";
             this.label_m3_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m3_lmtp.TabIndex = 58;
@@ -3726,7 +3512,7 @@
             // label_m2_lmtp
             // 
             this.label_m2_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m2_lmtp.Location = new System.Drawing.Point(384, 69);
+            this.label_m2_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m2_lmtp.Name = "label_m2_lmtp";
             this.label_m2_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m2_lmtp.TabIndex = 57;
@@ -3734,339 +3520,15 @@
             // label_m1_lmtp
             // 
             this.label_m1_lmtp.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label_m1_lmtp.Location = new System.Drawing.Point(384, 40);
+            this.label_m1_lmtp.Location = new System.Drawing.Point(434, 14);
             this.label_m1_lmtp.Name = "label_m1_lmtp";
             this.label_m1_lmtp.Size = new System.Drawing.Size(12, 12);
             this.label_m1_lmtp.TabIndex = 56;
             // 
-            // label_m12_speed
-            // 
-            this.label_m12_speed.AutoSize = true;
-            this.label_m12_speed.Location = new System.Drawing.Point(288, 369);
-            this.label_m12_speed.Name = "label_m12_speed";
-            this.label_m12_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m12_speed.TabIndex = 55;
-            this.label_m12_speed.Text = "0";
-            // 
-            // label_m11_speed
-            // 
-            this.label_m11_speed.AutoSize = true;
-            this.label_m11_speed.Location = new System.Drawing.Point(288, 340);
-            this.label_m11_speed.Name = "label_m11_speed";
-            this.label_m11_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m11_speed.TabIndex = 54;
-            this.label_m11_speed.Text = "0";
-            // 
-            // label_m10_speed
-            // 
-            this.label_m10_speed.AutoSize = true;
-            this.label_m10_speed.Location = new System.Drawing.Point(288, 309);
-            this.label_m10_speed.Name = "label_m10_speed";
-            this.label_m10_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m10_speed.TabIndex = 53;
-            this.label_m10_speed.Text = "0";
-            // 
-            // label_m9_speed
-            // 
-            this.label_m9_speed.AutoSize = true;
-            this.label_m9_speed.Location = new System.Drawing.Point(288, 280);
-            this.label_m9_speed.Name = "label_m9_speed";
-            this.label_m9_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m9_speed.TabIndex = 52;
-            this.label_m9_speed.Text = "0";
-            // 
-            // label_m8_speed
-            // 
-            this.label_m8_speed.AutoSize = true;
-            this.label_m8_speed.Location = new System.Drawing.Point(288, 249);
-            this.label_m8_speed.Name = "label_m8_speed";
-            this.label_m8_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m8_speed.TabIndex = 51;
-            this.label_m8_speed.Text = "0";
-            // 
-            // label_m7_speed
-            // 
-            this.label_m7_speed.AutoSize = true;
-            this.label_m7_speed.Location = new System.Drawing.Point(288, 220);
-            this.label_m7_speed.Name = "label_m7_speed";
-            this.label_m7_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m7_speed.TabIndex = 50;
-            this.label_m7_speed.Text = "0";
-            // 
-            // label_m6_speed
-            // 
-            this.label_m6_speed.AutoSize = true;
-            this.label_m6_speed.Location = new System.Drawing.Point(288, 189);
-            this.label_m6_speed.Name = "label_m6_speed";
-            this.label_m6_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m6_speed.TabIndex = 49;
-            this.label_m6_speed.Text = "0";
-            // 
-            // label_m5_speed
-            // 
-            this.label_m5_speed.AutoSize = true;
-            this.label_m5_speed.Location = new System.Drawing.Point(288, 160);
-            this.label_m5_speed.Name = "label_m5_speed";
-            this.label_m5_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m5_speed.TabIndex = 48;
-            this.label_m5_speed.Text = "0";
-            // 
-            // label_m4_speed
-            // 
-            this.label_m4_speed.AutoSize = true;
-            this.label_m4_speed.Location = new System.Drawing.Point(288, 129);
-            this.label_m4_speed.Name = "label_m4_speed";
-            this.label_m4_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m4_speed.TabIndex = 47;
-            this.label_m4_speed.Text = "0";
-            // 
-            // label_m3_speed
-            // 
-            this.label_m3_speed.AutoSize = true;
-            this.label_m3_speed.Location = new System.Drawing.Point(288, 100);
-            this.label_m3_speed.Name = "label_m3_speed";
-            this.label_m3_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m3_speed.TabIndex = 46;
-            this.label_m3_speed.Text = "0";
-            // 
-            // label_m2_speed
-            // 
-            this.label_m2_speed.AutoSize = true;
-            this.label_m2_speed.Location = new System.Drawing.Point(288, 69);
-            this.label_m2_speed.Name = "label_m2_speed";
-            this.label_m2_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m2_speed.TabIndex = 45;
-            this.label_m2_speed.Text = "0";
-            // 
-            // label_m1_speed
-            // 
-            this.label_m1_speed.AutoSize = true;
-            this.label_m1_speed.Location = new System.Drawing.Point(288, 40);
-            this.label_m1_speed.Name = "label_m1_speed";
-            this.label_m1_speed.Size = new System.Drawing.Size(11, 12);
-            this.label_m1_speed.TabIndex = 44;
-            this.label_m1_speed.Text = "0";
-            // 
-            // label_m12_finalposition
-            // 
-            this.label_m12_finalposition.AutoSize = true;
-            this.label_m12_finalposition.Location = new System.Drawing.Point(187, 369);
-            this.label_m12_finalposition.Name = "label_m12_finalposition";
-            this.label_m12_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m12_finalposition.TabIndex = 43;
-            this.label_m12_finalposition.Text = "0";
-            // 
-            // label_m11_finalposition
-            // 
-            this.label_m11_finalposition.AutoSize = true;
-            this.label_m11_finalposition.Location = new System.Drawing.Point(187, 340);
-            this.label_m11_finalposition.Name = "label_m11_finalposition";
-            this.label_m11_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m11_finalposition.TabIndex = 42;
-            this.label_m11_finalposition.Text = "0";
-            // 
-            // label_m10_finalposition
-            // 
-            this.label_m10_finalposition.AutoSize = true;
-            this.label_m10_finalposition.Location = new System.Drawing.Point(187, 309);
-            this.label_m10_finalposition.Name = "label_m10_finalposition";
-            this.label_m10_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m10_finalposition.TabIndex = 41;
-            this.label_m10_finalposition.Text = "0";
-            // 
-            // label_m9_finalposition
-            // 
-            this.label_m9_finalposition.AutoSize = true;
-            this.label_m9_finalposition.Location = new System.Drawing.Point(187, 280);
-            this.label_m9_finalposition.Name = "label_m9_finalposition";
-            this.label_m9_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m9_finalposition.TabIndex = 40;
-            this.label_m9_finalposition.Text = "0";
-            // 
-            // label_m8_finalposition
-            // 
-            this.label_m8_finalposition.AutoSize = true;
-            this.label_m8_finalposition.Location = new System.Drawing.Point(187, 249);
-            this.label_m8_finalposition.Name = "label_m8_finalposition";
-            this.label_m8_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m8_finalposition.TabIndex = 39;
-            this.label_m8_finalposition.Text = "0";
-            // 
-            // label_m7_finalposition
-            // 
-            this.label_m7_finalposition.AutoSize = true;
-            this.label_m7_finalposition.Location = new System.Drawing.Point(187, 220);
-            this.label_m7_finalposition.Name = "label_m7_finalposition";
-            this.label_m7_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m7_finalposition.TabIndex = 38;
-            this.label_m7_finalposition.Text = "0";
-            // 
-            // label_m6_finalposition
-            // 
-            this.label_m6_finalposition.AutoSize = true;
-            this.label_m6_finalposition.Location = new System.Drawing.Point(187, 189);
-            this.label_m6_finalposition.Name = "label_m6_finalposition";
-            this.label_m6_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m6_finalposition.TabIndex = 37;
-            this.label_m6_finalposition.Text = "0";
-            // 
-            // label_m5_finalposition
-            // 
-            this.label_m5_finalposition.AutoSize = true;
-            this.label_m5_finalposition.Location = new System.Drawing.Point(187, 160);
-            this.label_m5_finalposition.Name = "label_m5_finalposition";
-            this.label_m5_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m5_finalposition.TabIndex = 36;
-            this.label_m5_finalposition.Text = "0";
-            // 
-            // label_m4_finalposition
-            // 
-            this.label_m4_finalposition.AutoSize = true;
-            this.label_m4_finalposition.Location = new System.Drawing.Point(187, 129);
-            this.label_m4_finalposition.Name = "label_m4_finalposition";
-            this.label_m4_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m4_finalposition.TabIndex = 35;
-            this.label_m4_finalposition.Text = "0";
-            // 
-            // label_m3_finalposition
-            // 
-            this.label_m3_finalposition.AutoSize = true;
-            this.label_m3_finalposition.Location = new System.Drawing.Point(187, 100);
-            this.label_m3_finalposition.Name = "label_m3_finalposition";
-            this.label_m3_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m3_finalposition.TabIndex = 34;
-            this.label_m3_finalposition.Text = "0";
-            // 
-            // label_m2_finalposition
-            // 
-            this.label_m2_finalposition.AutoSize = true;
-            this.label_m2_finalposition.Location = new System.Drawing.Point(187, 69);
-            this.label_m2_finalposition.Name = "label_m2_finalposition";
-            this.label_m2_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m2_finalposition.TabIndex = 33;
-            this.label_m2_finalposition.Text = "0";
-            // 
-            // label_m1_finalposition
-            // 
-            this.label_m1_finalposition.AutoSize = true;
-            this.label_m1_finalposition.Location = new System.Drawing.Point(187, 40);
-            this.label_m1_finalposition.Name = "label_m1_finalposition";
-            this.label_m1_finalposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m1_finalposition.TabIndex = 32;
-            this.label_m1_finalposition.Text = "0";
-            // 
-            // label_m12_timeposition
-            // 
-            this.label_m12_timeposition.AutoSize = true;
-            this.label_m12_timeposition.Location = new System.Drawing.Point(84, 369);
-            this.label_m12_timeposition.Name = "label_m12_timeposition";
-            this.label_m12_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m12_timeposition.TabIndex = 31;
-            this.label_m12_timeposition.Text = "0";
-            // 
-            // label_m11_timeposition
-            // 
-            this.label_m11_timeposition.AutoSize = true;
-            this.label_m11_timeposition.Location = new System.Drawing.Point(84, 340);
-            this.label_m11_timeposition.Name = "label_m11_timeposition";
-            this.label_m11_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m11_timeposition.TabIndex = 30;
-            this.label_m11_timeposition.Text = "0";
-            // 
-            // label_m10_timeposition
-            // 
-            this.label_m10_timeposition.AutoSize = true;
-            this.label_m10_timeposition.Location = new System.Drawing.Point(84, 309);
-            this.label_m10_timeposition.Name = "label_m10_timeposition";
-            this.label_m10_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m10_timeposition.TabIndex = 29;
-            this.label_m10_timeposition.Text = "0";
-            // 
-            // label_m9_timeposition
-            // 
-            this.label_m9_timeposition.AutoSize = true;
-            this.label_m9_timeposition.Location = new System.Drawing.Point(84, 280);
-            this.label_m9_timeposition.Name = "label_m9_timeposition";
-            this.label_m9_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m9_timeposition.TabIndex = 28;
-            this.label_m9_timeposition.Text = "0";
-            // 
-            // label_m8_timeposition
-            // 
-            this.label_m8_timeposition.AutoSize = true;
-            this.label_m8_timeposition.Location = new System.Drawing.Point(84, 249);
-            this.label_m8_timeposition.Name = "label_m8_timeposition";
-            this.label_m8_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m8_timeposition.TabIndex = 27;
-            this.label_m8_timeposition.Text = "0";
-            // 
-            // label_m7_timeposition
-            // 
-            this.label_m7_timeposition.AutoSize = true;
-            this.label_m7_timeposition.Location = new System.Drawing.Point(84, 220);
-            this.label_m7_timeposition.Name = "label_m7_timeposition";
-            this.label_m7_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m7_timeposition.TabIndex = 26;
-            this.label_m7_timeposition.Text = "0";
-            // 
-            // label_m6_timeposition
-            // 
-            this.label_m6_timeposition.AutoSize = true;
-            this.label_m6_timeposition.Location = new System.Drawing.Point(84, 189);
-            this.label_m6_timeposition.Name = "label_m6_timeposition";
-            this.label_m6_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m6_timeposition.TabIndex = 25;
-            this.label_m6_timeposition.Text = "0";
-            // 
-            // label_m5_timeposition
-            // 
-            this.label_m5_timeposition.AutoSize = true;
-            this.label_m5_timeposition.Location = new System.Drawing.Point(84, 160);
-            this.label_m5_timeposition.Name = "label_m5_timeposition";
-            this.label_m5_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m5_timeposition.TabIndex = 24;
-            this.label_m5_timeposition.Text = "0";
-            // 
-            // label_m4_timeposition
-            // 
-            this.label_m4_timeposition.AutoSize = true;
-            this.label_m4_timeposition.Location = new System.Drawing.Point(84, 129);
-            this.label_m4_timeposition.Name = "label_m4_timeposition";
-            this.label_m4_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m4_timeposition.TabIndex = 23;
-            this.label_m4_timeposition.Text = "0";
-            // 
-            // label_m3_timeposition
-            // 
-            this.label_m3_timeposition.AutoSize = true;
-            this.label_m3_timeposition.Location = new System.Drawing.Point(84, 100);
-            this.label_m3_timeposition.Name = "label_m3_timeposition";
-            this.label_m3_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m3_timeposition.TabIndex = 22;
-            this.label_m3_timeposition.Text = "0";
-            // 
-            // label_m2_timeposition
-            // 
-            this.label_m2_timeposition.AutoSize = true;
-            this.label_m2_timeposition.Location = new System.Drawing.Point(84, 69);
-            this.label_m2_timeposition.Name = "label_m2_timeposition";
-            this.label_m2_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m2_timeposition.TabIndex = 21;
-            this.label_m2_timeposition.Text = "0";
-            // 
-            // label_m1_timeposition
-            // 
-            this.label_m1_timeposition.AutoSize = true;
-            this.label_m1_timeposition.Location = new System.Drawing.Point(84, 40);
-            this.label_m1_timeposition.Name = "label_m1_timeposition";
-            this.label_m1_timeposition.Size = new System.Drawing.Size(11, 12);
-            this.label_m1_timeposition.TabIndex = 20;
-            this.label_m1_timeposition.Text = "0";
-            // 
             // label_m12
             // 
             this.label_m12.AutoSize = true;
-            this.label_m12.Location = new System.Drawing.Point(25, 369);
+            this.label_m12.Location = new System.Drawing.Point(395, 14);
             this.label_m12.Name = "label_m12";
             this.label_m12.Size = new System.Drawing.Size(17, 12);
             this.label_m12.TabIndex = 19;
@@ -4075,7 +3537,7 @@
             // label_m11
             // 
             this.label_m11.AutoSize = true;
-            this.label_m11.Location = new System.Drawing.Point(25, 340);
+            this.label_m11.Location = new System.Drawing.Point(395, 14);
             this.label_m11.Name = "label_m11";
             this.label_m11.Size = new System.Drawing.Size(17, 12);
             this.label_m11.TabIndex = 18;
@@ -4084,7 +3546,7 @@
             // label_m10
             // 
             this.label_m10.AutoSize = true;
-            this.label_m10.Location = new System.Drawing.Point(25, 309);
+            this.label_m10.Location = new System.Drawing.Point(395, 14);
             this.label_m10.Name = "label_m10";
             this.label_m10.Size = new System.Drawing.Size(17, 12);
             this.label_m10.TabIndex = 17;
@@ -4093,7 +3555,7 @@
             // label_m9
             // 
             this.label_m9.AutoSize = true;
-            this.label_m9.Location = new System.Drawing.Point(25, 280);
+            this.label_m9.Location = new System.Drawing.Point(395, 14);
             this.label_m9.Name = "label_m9";
             this.label_m9.Size = new System.Drawing.Size(11, 12);
             this.label_m9.TabIndex = 16;
@@ -4102,7 +3564,7 @@
             // label_m8
             // 
             this.label_m8.AutoSize = true;
-            this.label_m8.Location = new System.Drawing.Point(25, 249);
+            this.label_m8.Location = new System.Drawing.Point(395, 14);
             this.label_m8.Name = "label_m8";
             this.label_m8.Size = new System.Drawing.Size(11, 12);
             this.label_m8.TabIndex = 15;
@@ -4111,7 +3573,7 @@
             // label_m7
             // 
             this.label_m7.AutoSize = true;
-            this.label_m7.Location = new System.Drawing.Point(25, 220);
+            this.label_m7.Location = new System.Drawing.Point(395, 14);
             this.label_m7.Name = "label_m7";
             this.label_m7.Size = new System.Drawing.Size(11, 12);
             this.label_m7.TabIndex = 14;
@@ -4120,7 +3582,7 @@
             // label_m6
             // 
             this.label_m6.AutoSize = true;
-            this.label_m6.Location = new System.Drawing.Point(25, 189);
+            this.label_m6.Location = new System.Drawing.Point(395, 14);
             this.label_m6.Name = "label_m6";
             this.label_m6.Size = new System.Drawing.Size(11, 12);
             this.label_m6.TabIndex = 13;
@@ -4129,7 +3591,7 @@
             // label_m5
             // 
             this.label_m5.AutoSize = true;
-            this.label_m5.Location = new System.Drawing.Point(25, 160);
+            this.label_m5.Location = new System.Drawing.Point(395, 14);
             this.label_m5.Name = "label_m5";
             this.label_m5.Size = new System.Drawing.Size(11, 12);
             this.label_m5.TabIndex = 12;
@@ -4138,7 +3600,7 @@
             // label_m4
             // 
             this.label_m4.AutoSize = true;
-            this.label_m4.Location = new System.Drawing.Point(25, 129);
+            this.label_m4.Location = new System.Drawing.Point(395, 14);
             this.label_m4.Name = "label_m4";
             this.label_m4.Size = new System.Drawing.Size(11, 12);
             this.label_m4.TabIndex = 11;
@@ -4147,7 +3609,7 @@
             // label_m3
             // 
             this.label_m3.AutoSize = true;
-            this.label_m3.Location = new System.Drawing.Point(25, 100);
+            this.label_m3.Location = new System.Drawing.Point(395, 14);
             this.label_m3.Name = "label_m3";
             this.label_m3.Size = new System.Drawing.Size(11, 12);
             this.label_m3.TabIndex = 10;
@@ -4156,7 +3618,7 @@
             // label_m2
             // 
             this.label_m2.AutoSize = true;
-            this.label_m2.Location = new System.Drawing.Point(25, 69);
+            this.label_m2.Location = new System.Drawing.Point(395, 14);
             this.label_m2.Name = "label_m2";
             this.label_m2.Size = new System.Drawing.Size(11, 12);
             this.label_m2.TabIndex = 9;
@@ -4165,7 +3627,7 @@
             // label_m1
             // 
             this.label_m1.AutoSize = true;
-            this.label_m1.Location = new System.Drawing.Point(25, 40);
+            this.label_m1.Location = new System.Drawing.Point(395, 14);
             this.label_m1.Name = "label_m1";
             this.label_m1.Size = new System.Drawing.Size(11, 12);
             this.label_m1.TabIndex = 8;
@@ -4174,7 +3636,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(552, 13);
+            this.label13.Location = new System.Drawing.Point(576, 13);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 12);
             this.label13.TabIndex = 7;
@@ -4183,7 +3645,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(494, 13);
+            this.label12.Location = new System.Drawing.Point(527, 13);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 12);
             this.label12.TabIndex = 6;
@@ -4192,7 +3654,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(432, 13);
+            this.label11.Location = new System.Drawing.Point(472, 13);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 12);
             this.label11.TabIndex = 5;
@@ -4201,43 +3663,16 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(371, 13);
+            this.label10.Location = new System.Drawing.Point(421, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 12);
             this.label10.TabIndex = 4;
             this.label10.Text = "正限位";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(285, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "运行速度";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(184, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 12);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "实际位置";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(84, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "逻辑位置";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 13);
+            this.label6.Location = new System.Drawing.Point(9, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 12);
             this.label6.TabIndex = 0;
@@ -4245,7 +3680,7 @@
             // 
             // button_motor_stop
             // 
-            this.button_motor_stop.Location = new System.Drawing.Point(1009, 430);
+            this.button_motor_stop.Location = new System.Drawing.Point(560, 508);
             this.button_motor_stop.Name = "button_motor_stop";
             this.button_motor_stop.Size = new System.Drawing.Size(75, 23);
             this.button_motor_stop.TabIndex = 2;
@@ -4255,30 +3690,425 @@
             // 
             // button_motor_clear
             // 
-            this.button_motor_clear.Location = new System.Drawing.Point(1115, 430);
+            this.button_motor_clear.Location = new System.Drawing.Point(655, 508);
             this.button_motor_clear.Name = "button_motor_clear";
             this.button_motor_clear.Size = new System.Drawing.Size(75, 23);
             this.button_motor_clear.TabIndex = 3;
             this.button_motor_clear.Text = "位置清零";
             this.button_motor_clear.UseVisualStyleBackColor = true;
+            this.button_motor_clear.Click += new System.EventHandler(this.button_motor_clear_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label7);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Controls.Add(this.label6);
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.label3);
+            this.groupBox9.Controls.Add(this.label4);
+            this.groupBox9.Controls.Add(this.label5);
+            this.groupBox9.Controls.Add(this.label10);
+            this.groupBox9.Controls.Add(this.label11);
+            this.groupBox9.Controls.Add(this.label12);
+            this.groupBox9.Controls.Add(this.label13);
+            this.groupBox9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox9.Location = new System.Drawing.Point(19, 18);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox9.Size = new System.Drawing.Size(708, 32);
+            this.groupBox9.TabIndex = 4;
+            this.groupBox9.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(384, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "状态";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.btn_enable_1);
+            this.groupBox10.Controls.Add(this.checkBox_m1);
+            this.groupBox10.Controls.Add(this.textBox_m1_destination);
+            this.groupBox10.Controls.Add(this.textBox_m1_initspeed);
+            this.groupBox10.Controls.Add(this.textBox_m1_speed);
+            this.groupBox10.Controls.Add(this.textBox_m1_speedup);
+            this.groupBox10.Controls.Add(this.label_m1);
+            this.groupBox10.Controls.Add(this.label_m1_lmtp);
+            this.groupBox10.Controls.Add(this.label_m1_lmtn);
+            this.groupBox10.Controls.Add(this.label_m1_stop0);
+            this.groupBox10.Controls.Add(this.label_m1_stop1);
+            this.groupBox10.Location = new System.Drawing.Point(19, 51);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(708, 36);
+            this.groupBox10.TabIndex = 5;
+            this.groupBox10.TabStop = false;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.btn_enable_2);
+            this.groupBox11.Controls.Add(this.checkBox_m2);
+            this.groupBox11.Controls.Add(this.textBox_m2_destination);
+            this.groupBox11.Controls.Add(this.textBox_m2_initspeed);
+            this.groupBox11.Controls.Add(this.textBox_m2_speed);
+            this.groupBox11.Controls.Add(this.textBox_m2_speedup);
+            this.groupBox11.Controls.Add(this.label_m2);
+            this.groupBox11.Controls.Add(this.label_m2_lmtp);
+            this.groupBox11.Controls.Add(this.label_m2_lmtn);
+            this.groupBox11.Controls.Add(this.label_m2_stop0);
+            this.groupBox11.Controls.Add(this.label_m2_stop1);
+            this.groupBox11.Location = new System.Drawing.Point(19, 87);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(708, 36);
+            this.groupBox11.TabIndex = 6;
+            this.groupBox11.TabStop = false;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.btn_enable_3);
+            this.groupBox12.Controls.Add(this.checkBox_m3);
+            this.groupBox12.Controls.Add(this.textBox_m3_destination);
+            this.groupBox12.Controls.Add(this.textBox_m3_initspeed);
+            this.groupBox12.Controls.Add(this.textBox_m3_speed);
+            this.groupBox12.Controls.Add(this.textBox_m3_speedup);
+            this.groupBox12.Controls.Add(this.label_m3);
+            this.groupBox12.Controls.Add(this.label_m3_lmtp);
+            this.groupBox12.Controls.Add(this.label_m3_lmtn);
+            this.groupBox12.Controls.Add(this.label_m3_stop0);
+            this.groupBox12.Controls.Add(this.label_m3_stop1);
+            this.groupBox12.Location = new System.Drawing.Point(19, 123);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(708, 36);
+            this.groupBox12.TabIndex = 7;
+            this.groupBox12.TabStop = false;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.btn_enable_4);
+            this.groupBox13.Controls.Add(this.checkBox_m4);
+            this.groupBox13.Controls.Add(this.textBox_m4_destination);
+            this.groupBox13.Controls.Add(this.textBox_m4_initspeed);
+            this.groupBox13.Controls.Add(this.textBox_m4_speed);
+            this.groupBox13.Controls.Add(this.textBox_m4_speedup);
+            this.groupBox13.Controls.Add(this.label_m4);
+            this.groupBox13.Controls.Add(this.label_m4_lmtp);
+            this.groupBox13.Controls.Add(this.label_m4_lmtn);
+            this.groupBox13.Controls.Add(this.label_m4_stop1);
+            this.groupBox13.Controls.Add(this.label_m4_stop0);
+            this.groupBox13.Location = new System.Drawing.Point(19, 159);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(708, 36);
+            this.groupBox13.TabIndex = 8;
+            this.groupBox13.TabStop = false;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.btn_enable_5);
+            this.groupBox14.Controls.Add(this.checkBox_m5);
+            this.groupBox14.Controls.Add(this.textBox_m5_destination);
+            this.groupBox14.Controls.Add(this.textBox_m5_initspeed);
+            this.groupBox14.Controls.Add(this.textBox_m5_speed);
+            this.groupBox14.Controls.Add(this.textBox_m5_speedup);
+            this.groupBox14.Controls.Add(this.label_m5);
+            this.groupBox14.Controls.Add(this.label_m5_lmtp);
+            this.groupBox14.Controls.Add(this.label_m5_stop1);
+            this.groupBox14.Controls.Add(this.label_m5_lmtn);
+            this.groupBox14.Controls.Add(this.label_m5_stop0);
+            this.groupBox14.Location = new System.Drawing.Point(19, 195);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(708, 36);
+            this.groupBox14.TabIndex = 9;
+            this.groupBox14.TabStop = false;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.btn_enable_6);
+            this.groupBox15.Controls.Add(this.checkBox_m6);
+            this.groupBox15.Controls.Add(this.textBox_m6_destination);
+            this.groupBox15.Controls.Add(this.textBox_m6_initspeed);
+            this.groupBox15.Controls.Add(this.textBox_m6_speed);
+            this.groupBox15.Controls.Add(this.textBox_m6_speedup);
+            this.groupBox15.Controls.Add(this.label_m6);
+            this.groupBox15.Controls.Add(this.label_m6_stop1);
+            this.groupBox15.Controls.Add(this.label_m6_lmtp);
+            this.groupBox15.Controls.Add(this.label_m6_lmtn);
+            this.groupBox15.Controls.Add(this.label_m6_stop0);
+            this.groupBox15.Location = new System.Drawing.Point(19, 231);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(708, 36);
+            this.groupBox15.TabIndex = 10;
+            this.groupBox15.TabStop = false;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.btn_enable_9);
+            this.groupBox16.Controls.Add(this.checkBox_m9);
+            this.groupBox16.Controls.Add(this.textBox_m9_destination);
+            this.groupBox16.Controls.Add(this.textBox_m9_initspeed);
+            this.groupBox16.Controls.Add(this.label_m9_stop1);
+            this.groupBox16.Controls.Add(this.textBox_m9_speed);
+            this.groupBox16.Controls.Add(this.textBox_m9_speedup);
+            this.groupBox16.Controls.Add(this.label_m9);
+            this.groupBox16.Controls.Add(this.label_m9_lmtp);
+            this.groupBox16.Controls.Add(this.label_m9_stop0);
+            this.groupBox16.Controls.Add(this.label_m9_lmtn);
+            this.groupBox16.Location = new System.Drawing.Point(19, 339);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(708, 36);
+            this.groupBox16.TabIndex = 13;
+            this.groupBox16.TabStop = false;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.btn_enable_8);
+            this.groupBox17.Controls.Add(this.checkBox_m8);
+            this.groupBox17.Controls.Add(this.textBox_m8_destination);
+            this.groupBox17.Controls.Add(this.textBox_m8_initspeed);
+            this.groupBox17.Controls.Add(this.textBox_m8_speed);
+            this.groupBox17.Controls.Add(this.label_m8_stop1);
+            this.groupBox17.Controls.Add(this.textBox_m8_speedup);
+            this.groupBox17.Controls.Add(this.label_m8);
+            this.groupBox17.Controls.Add(this.label_m8_lmtp);
+            this.groupBox17.Controls.Add(this.label_m8_lmtn);
+            this.groupBox17.Controls.Add(this.label_m8_stop0);
+            this.groupBox17.Location = new System.Drawing.Point(19, 303);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(708, 36);
+            this.groupBox17.TabIndex = 12;
+            this.groupBox17.TabStop = false;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.btn_enable_7);
+            this.groupBox18.Controls.Add(this.checkBox_m7);
+            this.groupBox18.Controls.Add(this.textBox_m7_destination);
+            this.groupBox18.Controls.Add(this.textBox_m7_initspeed);
+            this.groupBox18.Controls.Add(this.textBox_m7_speed);
+            this.groupBox18.Controls.Add(this.textBox_m7_speedup);
+            this.groupBox18.Controls.Add(this.label_m7_stop1);
+            this.groupBox18.Controls.Add(this.label_m7);
+            this.groupBox18.Controls.Add(this.label_m7_lmtp);
+            this.groupBox18.Controls.Add(this.label_m7_lmtn);
+            this.groupBox18.Controls.Add(this.label_m7_stop0);
+            this.groupBox18.Location = new System.Drawing.Point(19, 267);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(708, 36);
+            this.groupBox18.TabIndex = 11;
+            this.groupBox18.TabStop = false;
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.btn_enable_12);
+            this.groupBox19.Controls.Add(this.label_m12_stop1);
+            this.groupBox19.Controls.Add(this.textBox_m12_speedup);
+            this.groupBox19.Controls.Add(this.label_m12_stop0);
+            this.groupBox19.Controls.Add(this.checkBox_m12);
+            this.groupBox19.Controls.Add(this.label_m12_lmtn);
+            this.groupBox19.Controls.Add(this.textBox_m12_speed);
+            this.groupBox19.Controls.Add(this.label_m12_lmtp);
+            this.groupBox19.Controls.Add(this.textBox_m12_destination);
+            this.groupBox19.Controls.Add(this.label_m12);
+            this.groupBox19.Controls.Add(this.textBox_m12_initspeed);
+            this.groupBox19.Location = new System.Drawing.Point(19, 447);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(708, 36);
+            this.groupBox19.TabIndex = 16;
+            this.groupBox19.TabStop = false;
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.btn_enable_11);
+            this.groupBox20.Controls.Add(this.checkBox_m11);
+            this.groupBox20.Controls.Add(this.label_m11_stop1);
+            this.groupBox20.Controls.Add(this.textBox_m11_destination);
+            this.groupBox20.Controls.Add(this.textBox_m11_initspeed);
+            this.groupBox20.Controls.Add(this.label_m11_stop0);
+            this.groupBox20.Controls.Add(this.textBox_m11_speed);
+            this.groupBox20.Controls.Add(this.textBox_m11_speedup);
+            this.groupBox20.Controls.Add(this.label_m11_lmtn);
+            this.groupBox20.Controls.Add(this.label_m11);
+            this.groupBox20.Controls.Add(this.label_m11_lmtp);
+            this.groupBox20.Location = new System.Drawing.Point(19, 411);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(708, 36);
+            this.groupBox20.TabIndex = 15;
+            this.groupBox20.TabStop = false;
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.btn_enable_10);
+            this.groupBox21.Controls.Add(this.checkBox_m10);
+            this.groupBox21.Controls.Add(this.textBox_m10_destination);
+            this.groupBox21.Controls.Add(this.label_m10_stop1);
+            this.groupBox21.Controls.Add(this.textBox_m10_initspeed);
+            this.groupBox21.Controls.Add(this.textBox_m10_speed);
+            this.groupBox21.Controls.Add(this.textBox_m10_speedup);
+            this.groupBox21.Controls.Add(this.label_m10_stop0);
+            this.groupBox21.Controls.Add(this.label_m10);
+            this.groupBox21.Controls.Add(this.label_m10_lmtp);
+            this.groupBox21.Controls.Add(this.label_m10_lmtn);
+            this.groupBox21.Location = new System.Drawing.Point(19, 375);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(708, 36);
+            this.groupBox21.TabIndex = 14;
+            this.groupBox21.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(632, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "电机上电";
+            // 
+            // btn_enable_2
+            // 
+            this.btn_enable_2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_2.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_2.Name = "btn_enable_2";
+            this.btn_enable_2.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_2.TabIndex = 93;
+            this.btn_enable_2.Tag = "2";
+            this.btn_enable_2.Text = "OFF";
+            this.btn_enable_2.UseVisualStyleBackColor = false;
+            this.btn_enable_2.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_3
+            // 
+            this.btn_enable_3.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_3.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_3.Name = "btn_enable_3";
+            this.btn_enable_3.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_3.TabIndex = 94;
+            this.btn_enable_3.Tag = "3";
+            this.btn_enable_3.Text = "OFF";
+            this.btn_enable_3.UseVisualStyleBackColor = false;
+            this.btn_enable_3.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_4
+            // 
+            this.btn_enable_4.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_4.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_4.Name = "btn_enable_4";
+            this.btn_enable_4.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_4.TabIndex = 95;
+            this.btn_enable_4.Tag = "4";
+            this.btn_enable_4.Text = "OFF";
+            this.btn_enable_4.UseVisualStyleBackColor = false;
+            this.btn_enable_4.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_5
+            // 
+            this.btn_enable_5.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_5.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_5.Name = "btn_enable_5";
+            this.btn_enable_5.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_5.TabIndex = 96;
+            this.btn_enable_5.Tag = "5";
+            this.btn_enable_5.Text = "OFF";
+            this.btn_enable_5.UseVisualStyleBackColor = false;
+            this.btn_enable_5.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_6
+            // 
+            this.btn_enable_6.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_6.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_6.Name = "btn_enable_6";
+            this.btn_enable_6.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_6.TabIndex = 97;
+            this.btn_enable_6.Tag = "6";
+            this.btn_enable_6.Text = "OFF";
+            this.btn_enable_6.UseVisualStyleBackColor = false;
+            this.btn_enable_6.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_7
+            // 
+            this.btn_enable_7.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_7.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_7.Name = "btn_enable_7";
+            this.btn_enable_7.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_7.TabIndex = 98;
+            this.btn_enable_7.Tag = "7";
+            this.btn_enable_7.Text = "OFF";
+            this.btn_enable_7.UseVisualStyleBackColor = false;
+            this.btn_enable_7.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_8
+            // 
+            this.btn_enable_8.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_8.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_8.Name = "btn_enable_8";
+            this.btn_enable_8.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_8.TabIndex = 99;
+            this.btn_enable_8.Tag = "8";
+            this.btn_enable_8.Text = "OFF";
+            this.btn_enable_8.UseVisualStyleBackColor = false;
+            this.btn_enable_8.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_9
+            // 
+            this.btn_enable_9.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_9.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_9.Name = "btn_enable_9";
+            this.btn_enable_9.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_9.TabIndex = 100;
+            this.btn_enable_9.Tag = "9";
+            this.btn_enable_9.Text = "OFF";
+            this.btn_enable_9.UseVisualStyleBackColor = false;
+            this.btn_enable_9.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_10
+            // 
+            this.btn_enable_10.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_10.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_10.Name = "btn_enable_10";
+            this.btn_enable_10.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_10.TabIndex = 101;
+            this.btn_enable_10.Tag = "10";
+            this.btn_enable_10.Text = "OFF";
+            this.btn_enable_10.UseVisualStyleBackColor = false;
+            this.btn_enable_10.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_11
+            // 
+            this.btn_enable_11.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_11.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_11.Name = "btn_enable_11";
+            this.btn_enable_11.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_11.TabIndex = 102;
+            this.btn_enable_11.Tag = "11";
+            this.btn_enable_11.Text = "OFF";
+            this.btn_enable_11.UseVisualStyleBackColor = false;
+            this.btn_enable_11.Click += new System.EventHandler(this.btn_enable_Click);
+            // 
+            // btn_enable_12
+            // 
+            this.btn_enable_12.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btn_enable_12.Location = new System.Drawing.Point(642, 10);
+            this.btn_enable_12.Name = "btn_enable_12";
+            this.btn_enable_12.Size = new System.Drawing.Size(33, 23);
+            this.btn_enable_12.TabIndex = 103;
+            this.btn_enable_12.Tag = "12";
+            this.btn_enable_12.Text = "OFF";
+            this.btn_enable_12.UseVisualStyleBackColor = false;
+            this.btn_enable_12.Click += new System.EventHandler(this.btn_enable_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 563);
-            this.Controls.Add(this.button_motor_clear);
-            this.Controls.Add(this.button_motor_stop);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(1228, 601);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.groupBox7);
             this.Name = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage_base.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabPage_IO.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -4287,12 +4117,34 @@
             this.tabPage_para.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tabPage_uart.ResumeLayout(false);
-            this.tabPage_uart.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4303,8 +4155,6 @@
         private System.Windows.Forms.TabPage tabPage_base;
         private System.Windows.Forms.TabPage tabPage_IO;
         private System.Windows.Forms.TabPage tabPage_para;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -4373,11 +4223,7 @@
         private System.Windows.Forms.RadioButton radioButton_positive;
         private System.Windows.Forms.RadioButton radioButton_negative;
         private System.Windows.Forms.Button button_motor_start;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
@@ -4394,42 +4240,6 @@
         private System.Windows.Forms.Label label_m7;
         private System.Windows.Forms.Label label_m6;
         private System.Windows.Forms.Label label_m5;
-        private System.Windows.Forms.Label label_m12_timeposition;
-        private System.Windows.Forms.Label label_m11_timeposition;
-        private System.Windows.Forms.Label label_m10_timeposition;
-        private System.Windows.Forms.Label label_m9_timeposition;
-        private System.Windows.Forms.Label label_m8_timeposition;
-        private System.Windows.Forms.Label label_m7_timeposition;
-        private System.Windows.Forms.Label label_m6_timeposition;
-        private System.Windows.Forms.Label label_m5_timeposition;
-        private System.Windows.Forms.Label label_m4_timeposition;
-        private System.Windows.Forms.Label label_m3_timeposition;
-        private System.Windows.Forms.Label label_m2_timeposition;
-        private System.Windows.Forms.Label label_m1_timeposition;
-        private System.Windows.Forms.Label label_m12_speed;
-        private System.Windows.Forms.Label label_m11_speed;
-        private System.Windows.Forms.Label label_m10_speed;
-        private System.Windows.Forms.Label label_m9_speed;
-        private System.Windows.Forms.Label label_m8_speed;
-        private System.Windows.Forms.Label label_m7_speed;
-        private System.Windows.Forms.Label label_m6_speed;
-        private System.Windows.Forms.Label label_m5_speed;
-        private System.Windows.Forms.Label label_m4_speed;
-        private System.Windows.Forms.Label label_m3_speed;
-        private System.Windows.Forms.Label label_m2_speed;
-        private System.Windows.Forms.Label label_m1_speed;
-        private System.Windows.Forms.Label label_m12_finalposition;
-        private System.Windows.Forms.Label label_m11_finalposition;
-        private System.Windows.Forms.Label label_m10_finalposition;
-        private System.Windows.Forms.Label label_m9_finalposition;
-        private System.Windows.Forms.Label label_m8_finalposition;
-        private System.Windows.Forms.Label label_m7_finalposition;
-        private System.Windows.Forms.Label label_m6_finalposition;
-        private System.Windows.Forms.Label label_m5_finalposition;
-        private System.Windows.Forms.Label label_m4_finalposition;
-        private System.Windows.Forms.Label label_m3_finalposition;
-        private System.Windows.Forms.Label label_m2_finalposition;
-        private System.Windows.Forms.Label label_m1_finalposition;
         private System.Windows.Forms.Label label_m12_lmtp;
         private System.Windows.Forms.Label label_m11_lmtp;
         private System.Windows.Forms.Label label_m10_lmtp;
@@ -4634,7 +4444,6 @@
         private System.Windows.Forms.Button button_IO_out1;
         private System.Windows.Forms.Button button_IO_OUTCLOSE;
         private System.Windows.Forms.Button button_IO_OUTALL;
-        private System.Windows.Forms.TabPage tabPage_uart;
         private System.Windows.Forms.Button button_scan;
         private System.Windows.Forms.TextBox textBox_cmd;
         private System.Windows.Forms.GroupBox groupBox7;
@@ -4656,8 +4465,33 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button btn_enable_1;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_enable_12;
+        private System.Windows.Forms.Button btn_enable_11;
+        private System.Windows.Forms.Button btn_enable_10;
+        private System.Windows.Forms.Button btn_enable_9;
+        private System.Windows.Forms.Button btn_enable_6;
+        private System.Windows.Forms.Button btn_enable_8;
+        private System.Windows.Forms.Button btn_enable_5;
+        private System.Windows.Forms.Button btn_enable_7;
+        private System.Windows.Forms.Button btn_enable_4;
+        private System.Windows.Forms.Button btn_enable_3;
+        private System.Windows.Forms.Button btn_enable_2;
     }
 }
 
