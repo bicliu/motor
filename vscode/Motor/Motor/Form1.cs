@@ -526,7 +526,7 @@ namespace Motor
             }
             else
             {
-                motorlist[id].showL_state.BackColor = SystemColors.Control;
+                motorlist[id].showL_state.BackColor = Color.Transparent;
             }
             return;
         }

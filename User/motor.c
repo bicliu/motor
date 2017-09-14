@@ -507,6 +507,7 @@ void Motor_Stop(uint8_t motor_id)
 {
 	if(motor_id < MOTOR_NUM)
 	{
+		debug("Motor %d stop,run %d times\r\n",(motor_id + 1),timer_array[motor_array[motor_id].tim_id].step_count);
 		Timer_Stop(motor_array[motor_id].tim_id);
 		//Motor_Disable(motor_id);
 		//Gpio_Writebit(motor_array[motor_id].io_enable, IOENABLE_DISABLE);

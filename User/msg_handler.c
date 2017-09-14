@@ -55,7 +55,7 @@ void cmd_process(void)
 					return;
 				}
 				Motor_Stop((uint8_t)(id - 1));
-				debug("TIM%d stop!\r\n", id);
+				//debug("TIM%d stop!\r\n", id);
 				//dma_debug("TIM%d stop!\r\n", id);
 				return;
 			}
